@@ -1,6 +1,6 @@
 
 
-## First step: run yarn install (if you have any problem with sass run yarn remove node-sass next to that run yarn add -D sass)
+## First step: run: yarn install (if you have any problem with sass. run: yarn remove node-sass , next to that run: yarn add -D sass)
 
 ## Available Scripts
 
