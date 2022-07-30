@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+## First step: run yarn install (if you have any problem with sass run yarn remove node-sass next to that run yarn add -D sass)
 
 ## Available Scripts
 
