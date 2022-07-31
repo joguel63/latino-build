@@ -13,13 +13,13 @@ export default function HomeOneContent() {
       <div className="container">
         <div className="row">
           <div className="col-xl-6">
-            <NetSells />
+            {/* <NetSells /> */}
           </div>
           <div className="col-xl-3">
-            <Tickets />
+            {/* <Tickets /> */}
           </div>
           <div className="col-xl-3">
-            <UpcomingEvents />
+            {/* <UpcomingEvents /> */}
           </div>
         </div>
         <div className="row">
