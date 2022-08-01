@@ -23,17 +23,17 @@ export default function Header(props) {
             </button>
           </div>
           <div className="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-            <div className="header-search">
+            {/* <div className="header-search">
               <form action="#">
                 <div className="form-group">
                   <i className="icofont icofont-search"></i>
                   <input type="text" className="form-control" placeholder="Search" />
                 </div>
               </form>
-            </div>
+            </div> */}
           </div>
           <div className="col-lg-3 col-sm-6 col-6">
-            <button className="create-event-btn" onClick={handleShow}>Create New Event</button>
+            {/* <button className="create-event-btn" onClick={handleShow}>Create New Event</button> */}
           </div>
           <div className="col-lg-3 col-sm-6 col-6">
             <div className="header-user-profile">
