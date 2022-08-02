@@ -28,65 +28,66 @@ export default function NavMenu(props) {
               <MetisMenu className="metismenu" id="metismenu" toggle={true}>
                 <li>
                   <Link to="/">
-                    <span className="fa fa-home"></span> HOME
+                    <span className="fa fa-home"></span> Inicio
                  </Link>
                 </li>
                 <li>
+                  <Link to="/calendar">
+                    <span className="fa fa-newspaper-o"></span> Noticias
+                  </Link>
+                </li>
+                <li>
                   <a className="has-arrow" href="#">
-                    <span className="fa fa-calendar-check-o"></span> Events
+                    <span className="fa fa-users "></span> NOSOTROS
                   </a>
                   <ul>
                     <li>
-                      <Link to="/active_events">All Events</Link>
+                      <Link to="/active_events">Historia</Link>
                     </li>
                     <li>
-                      <Link to="/draft_events">Draft Events</Link>
+                      <Link to="/draft_events">Junta directiva</Link>
                     </li>
                     <li>
-                      <Link to="/my_events">My Events</Link>
+                      <Link to="/my_events">Personal administrativo</Link>
+                    </li>
+                    <li>
+                      <Link to="/my_events">Reglamentos</Link>
+                    </li>
+                    <li>
+                      <Link to="/my_events">Estatutos</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
                   <Link to="/members">
-                    <span className="fa fa-users"></span>
-                   Members
+                    <span className="fa fa-university"></span>
+                   Instalaciones
                  </Link>
                 </li>
                 <li>
                   <a className="has-arrow" href="#">
-                    <span className="fa fa-envelope"></span> Messages
+                    <span className="fa fa-futbol-o"></span> Escuelas deportivas
                  </a>
                   <ul aria-expanded="false">
                     <li>
-                      <Link to="/message">Inbox</Link>
+                      <Link to="/message">Karate</Link>
                     </li>
                     <li>
-                      <Link to="/chat">Chat</Link>
+                      <Link to="/chat">Beisbol</Link>
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <Link to="/calendar">
-                    <span className="fa fa-calendar"></span> Calender
-                  </Link>
-                </li>
+                
                 <li>
                   <a className="has-arrow" href="#" aria-expanded="false">
-                    <span className="fa fa-cog"></span> Settings
+                    <span className="fa fa-cog"></span> Configuracion
                   </a>
                   <ul aria-expanded="false">
                     <li>
-                      <Link to="/profile">Profile</Link>
+                      <Link to="/profile">Perfil</Link>
                     </li>
                     <li>
-                      <Link to="/payment">Payment</Link>
-                    </li>
-                    <li>
-                      <Link to="/notification">Notification</Link>
-                    </li>
-                    <li>
-                      <Link to="/personal">Personal</Link>
+                      <Link to="/payment">Deuda</Link>
                     </li>
                   </ul>
                 </li>
