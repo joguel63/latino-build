@@ -1,6 +1,9 @@
 .header .logo {
   padding: 30px 0px;
-  display: inline-block; }
+  display: inline-block;
+  width:auto;
+  height: 10%;
+ }
 
 a.create-event-btn {
   padding: 20px 30px;

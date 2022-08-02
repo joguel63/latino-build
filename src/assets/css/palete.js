@@ -1,7 +1,7 @@
 export default {
     "background":{
         "main":"#ffffff",
-        "dark":""
+        "dark":"#"
     },
     "primary":{
         "main":"#606c38",

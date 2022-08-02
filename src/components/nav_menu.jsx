@@ -28,7 +28,7 @@ export default function NavMenu(props) {
               <MetisMenu className="metismenu" id="metismenu" toggle={true}>
                 <li>
                   <Link to="/">
-                    <span className="fa fa-tachometer"></span> DASHBOARD
+                    <span className="fa fa-home"></span> HOME
                  </Link>
                 </li>
                 <li>
