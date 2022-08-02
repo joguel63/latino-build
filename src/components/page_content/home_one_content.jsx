@@ -24,14 +24,14 @@ export default function HomeOneContent() {
         </div>
         <div className="row">
           <div className="col-xl-6">
-            <RecentSells />
+            {/* <RecentSells /> */}
           </div>
           <div className="col-xl-3">
-            <TotalSeats />
+            {/* <TotalSeats /> */}
           </div>
           <div className="col-xl-3">
-            <OnlineSells />
-            <Campaign />
+            {/* <OnlineSells /> */}
+            {/* <Campaign /> */}
           </div>
         </div>
       </div>
