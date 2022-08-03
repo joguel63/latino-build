@@ -5,7 +5,7 @@ import Breadcrumb from "../components/breadcrumb";
 export default function Members() {
   return (
    <PageLayout>
-     <Breadcrumb title="Members"/>
+     <Breadcrumb title="Espacios"/>
      <MembersContent/>
    </PageLayout>
   );
