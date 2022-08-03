@@ -13,7 +13,7 @@ export default function Header(props) {
         <div className="row align-items-center">
           <div className="col-lg-2 col-sm-6 mb-4 mb-lg-0">
             <div className="logo">
-              <Link to="/"><img src={logoImg} alt="logo" /></Link>
+              <Link to="/"><img className='logo' src={logoImg} alt="logo" /></Link>
             </div>
             <button className="nav-control" onClick={props.controlMenu}>
               {props.showMenu ?
