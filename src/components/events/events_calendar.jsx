@@ -6,7 +6,7 @@ import 'react-big-calendar/lib/sass/styles.scss';
 const localizer = momentLocalizer(moment);
 
 
-let allViews = Object.keys(Views).map(k => Views[k])
+/* let allViews = Object.keys(Views).map(k => Views[k]) */
 
 const ColoredDateCellWrapper = ({ children }) =>
  React.cloneElement(React.Children.only(children), {

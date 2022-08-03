@@ -6,7 +6,7 @@ import {
 import 'react-circular-progressbar/dist/styles.css';
 export default function CircleChartOne(props) {
 
- const percentage = 90;
+ /* const percentage = 90; */
   return (
     <>
      <CircularProgressbar 
