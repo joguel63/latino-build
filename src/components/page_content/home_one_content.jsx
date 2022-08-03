@@ -1,11 +1,11 @@
 import React from 'react';
-import NetSells from "../widgets/net_sells";
-import Tickets from "../widgets/tickets";
-import UpcomingEvents from "../widgets/upcoming_events";
-import RecentSells from "../widgets/recent_sells";
-import TotalSeats from "../widgets/total_seats";
-import OnlineSells from "../widgets/online_sells";
-import Campaign from "../widgets/campaign";
+// import NetSells from "../widgets/net_sells";
+// import Tickets from "../widgets/tickets";
+// import UpcomingEvents from "../widgets/upcoming_events";
+// import RecentSells from "../widgets/recent_sells";
+// import TotalSeats from "../widgets/total_seats";
+// import OnlineSells from "../widgets/online_sells";
+// import Campaign from "../widgets/campaign";
 
 export default function HomeOneContent() {
   return (

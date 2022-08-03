@@ -12,7 +12,7 @@ export default function ProfileContent() {
                <div className="col-xl-8 p-r-0">
                 <div className="modal-right">
                  <div className="media personal-profile">
-                  <img className="m-r-30 img-fluid" src={authorImg} alt="placeholder image" />
+                  <img className="m-r-30 img-fluid" src={authorImg} alt="placeholder" />
                   <div className="media-body">
                    <h3 className="mt-0">Anamika</h3>
                    <p className="denger"><i className="fa fa-map-marker"></i>Location</p>
@@ -45,10 +45,10 @@ export default function ProfileContent() {
                     <p><i className="fa fa-check-circle"></i>ACTIVITY</p>
                    </div>
                    <div className="col-auto">
-                    <a href="#">
+                    <a href="https://www.google.com/">
                      <i className="fa fa-exclamation-triangle"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.google.com/">
                      <i className="fa fa-trash"></i>
                     </a>
                    </div>
