@@ -22,8 +22,8 @@ export default function NotificationContent() {
               <td className="date">July 12, 2018</td>
               <td>
                <CustomDropdown>
-                <a className="dropdown-item" href="#">Edit</a>
-                <a className="dropdown-item" href="#">Delete</a>
+                <a className="dropdown-item" href="https://www.google.com/">Edit</a>
+                <a className="dropdown-item" href="https://www.google.com/">Delete</a>
                </CustomDropdown>
               </td>
              </tr>
@@ -35,8 +35,8 @@ export default function NotificationContent() {
               <td className="date">July 12, 2018</td>
               <td>
                <CustomDropdown>
-                <a className="dropdown-item" href="#">Edit</a>
-                <a className="dropdown-item" href="#">Delete</a>
+                <a className="dropdown-item" href="https://www.google.com/">Edit</a>
+                <a className="dropdown-item" href="https://www.google.com/">Delete</a>
                </CustomDropdown>
               </td>
              </tr>
@@ -48,8 +48,8 @@ export default function NotificationContent() {
               <td className="date">July 12, 2018</td>
               <td>
                <CustomDropdown>
-                <a className="dropdown-item" href="#">Edit</a>
-                <a className="dropdown-item" href="#">Delete</a>
+                <a className="dropdown-item" href="https://www.google.com/">Edit</a>
+                <a className="dropdown-item" href="https://www.google.com/">Delete</a>
                </CustomDropdown>
               </td>
              </tr>
@@ -61,8 +61,8 @@ export default function NotificationContent() {
               <td className="date">July 12, 2018</td>
               <td>
                <CustomDropdown>
-                <a className="dropdown-item" href="#">Edit</a>
-                <a className="dropdown-item" href="#">Delete</a>
+                <a className="dropdown-item" href="https://www.google.com/">Edit</a>
+                <a className="dropdown-item" href="https://www.google.com/">Delete</a>
                </CustomDropdown>
               </td>
              </tr>

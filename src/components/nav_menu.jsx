@@ -1,21 +1,21 @@
-import React, {useState, useEffect} from 'react';
-import MetisMenu from '@metismenu/react';
-import 'metismenujs/dist/metismenujs.css';
+import React, { useState, useEffect } from "react";
+import MetisMenu from "@metismenu/react";
+import "metismenujs/dist/metismenujs.css";
 import { Link } from "react-router-dom";
 
 export default function NavMenu(props) {
-  const [tabletView,setTabletView] = useState(false);
-  const controlMenu = () =>{
-    if(window.innerWidth < 992){
+  const [tabletView, setTabletView] = useState(false);
+  const controlMenu = () => {
+    if (window.innerWidth < 992) {
       setTabletView(true);
-    }else {
+    } else {
       setTabletView(false);
     }
     window.addEventListener("resize", controlMenu);
-  }
-  useEffect(()=>{
+  };
+  useEffect(() => {
     controlMenu();
-  }, [tabletView]);
+  }/*, [tabletView]*/);
 
   const showMenu = props.showMenu;
   const navClass = showMenu ? "tablet-menu show" : "tablet-menu";
@@ -29,7 +29,7 @@ export default function NavMenu(props) {
                 <li>
                   <Link to="/">
                     <span className="fa fa-home"></span> Inicio
-                 </Link>
+                  </Link>
                 </li>
                 <li>
                   <Link to="/calendar">
@@ -37,7 +37,7 @@ export default function NavMenu(props) {
                   </Link>
                 </li>
                 <li>
-                  <a className="has-arrow" href="#">
+                  <a className="has-arrow" href="https://www.google.com/">
                     <span className="fa fa-users "></span> NOSOTROS
                   </a>
                   <ul>
@@ -61,13 +61,13 @@ export default function NavMenu(props) {
                 <li>
                   <Link to="/members">
                     <span className="fa fa-university"></span>
-                   Instalaciones
-                 </Link>
+                    Instalaciones
+                  </Link>
                 </li>
                 <li>
-                  <a className="has-arrow" href="#">
+                  <a className="has-arrow" href="https://www.google.com/">
                     <span className="fa fa-futbol-o"></span> Escuelas deportivas
-                 </a>
+                  </a>
                   <ul aria-expanded="false">
                     <li>
                       <Link to="/message">Karate</Link>
@@ -77,9 +77,13 @@ export default function NavMenu(props) {
                     </li>
                   </ul>
                 </li>
-                
+
                 <li>
-                  <a className="has-arrow" href="#" aria-expanded="false">
+                  <a
+                    className="has-arrow"
+                    href="https://www.google.com/"
+                    aria-expanded="false"
+                  >
                     <span className="fa fa-cog"></span> Configuracion
                   </a>
                   <ul aria-expanded="false">

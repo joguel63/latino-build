@@ -26,14 +26,14 @@ export default function RecentSells() {
                   <td><img src={userImg} alt="user" /></td>
                   <td>
                     John Doe
-                   <a href="#"> Event Name Here</a>
+                   <a href="https://www.google.com/"> Event Name Here</a>
                   </td>
                   <td>X1</td>
                   <td>165</td>
                   <td>
                     <CustomDropdown>
-                      <a href="#" className="dropdown-item">Edit</a>
-                      <a href="#" className="dropdown-item">Delete</a>
+                      <a href="https://www.google.com/" className="dropdown-item">Edit</a>
+                      <a href="https://www.google.com/" className="dropdown-item">Delete</a>
                     </CustomDropdown>
                   </td>
                 </tr>
@@ -41,14 +41,14 @@ export default function RecentSells() {
                   <td><img src={userImg} alt="user" /></td>
                   <td>
                     John Doe
-                  <a href="#"> Event Name Here</a>
+                  <a href="https://www.google.com/"> Event Name Here</a>
                   </td>
                   <td>X1</td>
                   <td>165</td>
                   <td>
                     <CustomDropdown>
-                      <a href="#" className="dropdown-item">Edit</a>
-                      <a href="#" className="dropdown-item">Delete</a>
+                      <a href="https://www.google.com/" className="dropdown-item">Edit</a>
+                      <a href="https://www.google.com/" className="dropdown-item">Delete</a>
                     </CustomDropdown>
                   </td>
                 </tr>
@@ -56,14 +56,14 @@ export default function RecentSells() {
                   <td><img src={userImg} alt="user" /></td>
                   <td>
                     John Doe
-                  <a href="#"> Event Name Here</a>
+                  <a href="https://www.google.com/"> Event Name Here</a>
                   </td>
                   <td>X1</td>
                   <td>165</td>
                   <td>
                     <CustomDropdown>
-                      <a href="#" className="dropdown-item">Edit</a>
-                      <a href="#" className="dropdown-item">Delete</a>
+                      <a href="https://www.google.com/" className="dropdown-item">Edit</a>
+                      <a href="https://www.google.com/" className="dropdown-item">Delete</a>
                     </CustomDropdown>
                   </td>
                 </tr>
@@ -71,14 +71,14 @@ export default function RecentSells() {
                   <td><img src={userImg} alt="user" /></td>
                   <td>
                     John Doe
-                  <a href="#"> Event Name Here</a>
+                  <a href="https://www.google.com/"> Event Name Here</a>
                   </td>
                   <td>X1</td>
                   <td>165</td>
                   <td>
                     <CustomDropdown>
-                      <a href="#" className="dropdown-item">Edit</a>
-                      <a href="#" className="dropdown-item">Delete</a>
+                      <a href="https://www.google.com/" className="dropdown-item">Edit</a>
+                      <a href="https://www.google.com/" className="dropdown-item">Delete</a>
                     </CustomDropdown>
                   </td>
                 </tr>
@@ -86,14 +86,14 @@ export default function RecentSells() {
                   <td><img src={userImg} alt="user" /></td>
                   <td>
                     John Doe
-                  <a href="#"> Event Name Here</a>
+                  <a href="https://www.google.com/"> Event Name Here</a>
                   </td>
                   <td>X1</td>
                   <td>165</td>
                   <td>
                     <CustomDropdown>
-                      <a href="#" className="dropdown-item">Edit</a>
-                      <a href="#" className="dropdown-item">Delete</a>
+                      <a href="https://www.google.com/" className="dropdown-item">Edit</a>
+                      <a href="https://www.google.com/" className="dropdown-item">Delete</a>
                     </CustomDropdown>
                   </td>
                 </tr>

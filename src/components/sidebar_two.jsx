@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Tab, Nav } from "react-bootstrap";
+import {/*Row, Col,*/ Tab, Nav } from "react-bootstrap";
 import authorImg from "../assets/images/peoples/person.png";
 export default function SidebarTwo() {
   return (

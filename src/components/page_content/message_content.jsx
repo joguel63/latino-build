@@ -50,13 +50,13 @@ export default function MessageContent() {
                   </div>
                   <div className="col-auto">
                     <CustomDropdown>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="https://www.google.com/">
                         Option 1
                        </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="https://www.google.com/">
                         Option 2
                        </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="https://www.google.com/">
                         Option 3
                         </a>
                     </CustomDropdown>

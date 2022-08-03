@@ -14,28 +14,28 @@ export default function UpcomingEvents() {
           <td><img src={userImg} alt="user" /></td>
           <td>
            Event Name
-              <a href="#"><i className="icofont icofont-social-google-map"></i> Location</a>
+              <a href="https://www.google.com/"><i className="icofont icofont-social-google-map"></i> Location</a>
           </td>
          </tr>
          <tr>
           <td><img src={userImg} alt="user" /></td>
           <td>
            Event Name
-             <a href="#"><i className="icofont icofont-social-google-map"></i> Location</a>
+             <a href="https://www.google.com/"><i className="icofont icofont-social-google-map"></i> Location</a>
           </td>
          </tr>
          <tr>
           <td><img src={userImg} alt="user" /></td>
           <td>
            Event Name
-              <a href="#"><i className="icofont icofont-social-google-map"></i> Location</a>
+              <a href="https://www.google.com/"><i className="icofont icofont-social-google-map"></i> Location</a>
           </td>
          </tr>
          <tr>
           <td><img src={userImg} alt="user" /></td>
           <td>
            Event Name
-              <a href="#"><i className="icofont icofont-social-google-map"></i> Location</a>
+              <a href="https://www.google.com/"><i className="icofont icofont-social-google-map"></i> Location</a>
           </td>
          </tr>
         </tbody>

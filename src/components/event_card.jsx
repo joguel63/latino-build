@@ -24,14 +24,14 @@ export default function EventCard(props) {
        <p>5 min ago</p>
       </div>
       <CustomDropdown>
-       <a className="dropdown-item" href="#">Option 1</a>
-       <a className="dropdown-item" href="#">Option 2</a>
-       <a className="dropdown-item" href="#">Option 3</a>
+       <a className="dropdown-item" href="https://www.google.com/">Option 1</a>
+       <a className="dropdown-item" href="https://www.google.com/">Option 2</a>
+       <a className="dropdown-item" href="https://www.google.com/">Option 3</a>
       </CustomDropdown>
      </div>
     </div>
     <div className="event-card-img">
-     <img className="img-fluid" src={eventImg} alt="placeholder image"/>
+     <img className="img-fluid" src={eventImg} alt="placeholder"/>
         <h4>{event_name}</h4>
     </div>
     <div className="card-body">
@@ -55,17 +55,17 @@ export default function EventCard(props) {
       <div className="col-auto">
        <h4>Sponsor by</h4>
        <div className="card-sponsor-img">
-        <a href="#">
-         <img className="img-fluid" src={eventSponsorImg01} alt="placeholder image" />
+        <a href="https://www.google.com/">
+         <img className="img-fluid" src={eventSponsorImg01} alt="placeholder" />
         </a>
-        <a href="#">
-         <img className="img-fluid" src={eventSponsorImg02} alt="placeholder image" />
+        <a href="https://www.google.com/">
+         <img className="img-fluid" src={eventSponsorImg02} alt="placeholder" />
         </a>
-        <a href="#">
-         <img className="img-fluid" src={eventSponsorImg03} alt="placeholder image" />
+        <a href="https://www.google.com/">
+         <img className="img-fluid" src={eventSponsorImg03} alt="placeholder" />
         </a>
-        <a href="#">
-         <img className="img-fluid" src={eventSponsorImg04} alt="placeholder image" />
+        <a href="https://www.google.com/">
+         <img className="img-fluid" src={eventSponsorImg04} alt="placeholder" />
         </a>
        </div>
       </div>
@@ -77,19 +77,19 @@ export default function EventCard(props) {
     <div className="card-footer">
      <ul>
       <li>
-       <a href="#"> <i className="fa fa-heart"></i>126 </a>
+       <a href="https://www.google.com/"> <i className="fa fa-heart"></i>126 </a>
       </li>
       <li>
-       <a href="#"> <i className="fa fa-comment"></i>03 </a>
+       <a href="https://www.google.com/"> <i className="fa fa-comment"></i>03 </a>
       </li>
       <li>
-       <a href="#">
+       <a href="https://www.google.com/">
         <i className="fa fa-sign-out"></i>
        </a>
       </li>
      </ul>
      <div className="pull-right">
-      <a href="#"> <i className="fa fa-bar-chart"></i>Insights</a>
+      <a href="https://www.google.com/"> <i className="fa fa-bar-chart"></i>Insights</a>
      </div>
     </div>
    </div>

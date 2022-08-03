@@ -27,9 +27,9 @@ export default function ChatContent() {
             <p>Online</p>
            </div>
            <CustomDropdown>
-            <a className="dropdown-item" href="#">Option 1</a>
-            <a className="dropdown-item" href="#">Option 2</a>
-            <a className="dropdown-item" href="#">Option 3</a>
+            <a className="dropdown-item" href="https://www.google.com/">Option 1</a>
+            <a className="dropdown-item" href="https://www.google.com/">Option 2</a>
+            <a className="dropdown-item" href="https://www.google.com/">Option 3</a>
            </CustomDropdown>
           </div>
          </li>
