@@ -15,6 +15,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/scss/style.scss";
 import "./assets/css/shortcode.css";
+import DirectionBoard from './pages/direction_board';
+import AdministrativePersonal from './pages/administrative_personal';
+import History from './pages/history';
 function App() {
   return (
     <div className="App">
@@ -55,6 +58,15 @@ function App() {
           </Route>
           <Route path="/personal">
             <Personal/>
+          </Route>
+          <Route path="/history">
+            <History/>
+          </Route>
+          <Route path="/direction_board">
+            <DirectionBoard/>
+          </Route>
+          <Route path="/administrative_personal">
+            <AdministrativePersonal/>
           </Route>
         </Switch>
       </Router>

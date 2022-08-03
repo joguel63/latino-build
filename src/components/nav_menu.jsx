@@ -42,7 +42,7 @@ export default function NavMenu(props) {
                   </a>
                   <ul>
                     <li>
-                      <Link to="/active_events">Historia</Link>
+                      <Link to="/history">Historia</Link>
                     </li>
                     <li>
                       <Link to="/draft_events">Junta directiva</Link>
