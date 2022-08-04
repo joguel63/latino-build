@@ -45,21 +45,21 @@ export default function NavMenu(props) {
                       <Link to="/history">Historia</Link>
                     </li>
                     <li>
-                      <Link to="/draft_events">Junta directiva</Link>
+                      <Link to="/direction_board">Junta directiva</Link>
                     </li>
                     <li>
-                      <Link to="/my_events">Personal administrativo</Link>
+                      <Link to="/administrative_personal">Personal administrativo</Link>
                     </li>
                     <li>
-                      <Link to="/my_events">Reglamentos</Link>
+                      <Link to="/regulations">Reglamentos</Link>
                     </li>
                     <li>
-                      <Link to="/my_events">Estatutos</Link>
+                      <Link to="/statutes">Estatutos</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link to="/members">
+                  <Link to="/spaces">
                     <span className="fa fa-university"></span>
                     Instalaciones
                   </Link>

@@ -2,8 +2,8 @@ import React from "react";
 import PageLayout from "../layouts/page_layout";
 import Breadcrumb from "../components/breadcrumb";
 
-export default function DirectionBoard(){
+export default function Regulations(){
     return (<PageLayout>
-        <Breadcrumb title="Junta directiva"/>
+        <Breadcrumb title="Regulaciones"></Breadcrumb>
     </PageLayout>)
 }
