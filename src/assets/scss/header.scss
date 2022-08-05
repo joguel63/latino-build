@@ -57,7 +57,9 @@
     background: darken($primary, 10%);
   }
 }
-
+.header-container {
+  justify-content: space-between;
+}
 .custom-dropdown {
   padding: 0;
 }
