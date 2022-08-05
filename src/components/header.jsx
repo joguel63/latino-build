@@ -13,8 +13,8 @@ export default function Header(props) {
   return (
     <div className="header py-4">
       <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-2 col-sm-6 mb-4 mb-lg-0">
+        <div className="row align-items-center header-container">
+          <div>
             <div className="logo">
               <Link to="/">
                 <img className="logo" src={logoImg} alt="logo" />
@@ -28,20 +28,8 @@ export default function Header(props) {
               )}
             </button>
           </div>
-          <div className="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-            {/* <div className="header-search">
-              <form action="#">
-                <div className="form-group">
-                  <i className="icofont icofont-search"></i>
-                  <input type="text" className="form-control" placeholder="Search" />
-                </div>
-              </form>
-            </div> */}
-          </div>
-          <div className="col-lg-3 col-sm-6 col-6">
-            {/* <button className="create-event-btn" onClick={handleShow}>Create New Event</button> */}
-          </div>
-          <div className="col-lg-3 col-sm-6 col-6">
+
+          <div>
             <div className="header-user-profile">
               {isLoged ? <UserDropdown /> : <LoginButton />}
             </div>
