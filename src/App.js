@@ -3,7 +3,7 @@ import HomeOne from "./pages/home_one";
 import ActiveEvents from "./pages/active_events";
 import DraftEvents from "./pages/draft_events";
 import MyEvents from "./pages/my_events";
-import Members from "./pages/members";
+import Members from "./pages/spaces";
 import Message from "./pages/message";
 import ChatPage from "./pages/chat";
 import CalendarPage from "./pages/calendar";
@@ -19,6 +19,9 @@ import DirectionBoard from "./pages/direction_board";
 import AdministrativePersonal from "./pages/administrative_personal";
 import History from "./pages/history";
 import { AppProvider } from "core/providers";
+import Regulations from "pages/regulations";
+import Statutes from "pages/statutes";
+import Spaces from "./pages/spaces";
 function App() {
   return (
     <div className="App">
@@ -69,6 +72,15 @@ function App() {
             </Route>
             <Route path="/administrative_personal">
               <AdministrativePersonal />
+            </Route>
+            <Route path="/regulations">
+              <Regulations/>
+            </Route>
+            <Route path="/statutes">
+              <Statutes/>
+            </Route>
+            <Route path="/spaces">
+              <Spaces/>
             </Route>
           </Switch>
         </AppProvider>
