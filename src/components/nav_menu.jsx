@@ -28,7 +28,7 @@ export default function NavMenu(props) {
               <MetisMenu className="metismenu" id="metismenu" toggle={true}>
                 <NavMenuItem title="Inicio" icon="fa fa-home" route="/"></NavMenuItem>
                 <NavMenuItem title="Blog" icon="fa fa-newspaper-o" route="/blog"></NavMenuItem>
-                <NavMenuItem title="Nosotros" icon="fa fa-users" subitems={[{link:"/history",label:"Historia"},{link:"/direction_board",label:"Junta directiva"},{link:"/administrative_personal",label:"Personal administrativo"},{link:"/regulations",label:"Reglamentos"},{link:"/statutes",label:"Estatutos"}]}></NavMenuItem>
+                <NavMenuItem title="Nosotros" icon="fa fa-users" subitems={[{link:"/history",label:"Historia"},{link:"/presidents",label:"Galería de presidentes"},{link:"/direction_board",label:"Junta directiva"},{link:"/administrative_personal",label:"Personal administrativo"},{link:"/regulations",label:"Reglamentos"},{link:"/statutes",label:"Estatutos"}]}></NavMenuItem>
                 <NavMenuItem title="Instalaciones" icon="fa fa-university" route="/spaces"></NavMenuItem>
                 <NavMenuItem title="Cultura" icon="fa fa-music " subitems={[{link:"/coral",label:"Coral"}]}></NavMenuItem>
                 <NavMenuItem title="Deportes" icon="fa fa-trophy" subitems={[{link:"/tenis",label:"Tenis"}]} ></NavMenuItem>

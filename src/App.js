@@ -22,6 +22,8 @@ import { AppProvider } from "core/providers";
 import Regulations from "pages/regulations";
 import Statutes from "pages/statutes";
 import Spaces from "./pages/spaces";
+import PresidentsPage from "pages/presidents";
+// --openssl-legacy-provider
 function App() {
   return (
     <div className="App">
@@ -81,6 +83,12 @@ function App() {
             </Route>
             <Route path="/spaces">
               <Spaces/>
+            </Route>
+            <Route path="/presidents">
+              <PresidentsPage/>
+            </Route>
+            <Route path="/blog">
+              <HomeOne/>
             </Route>
           </Switch>
         </AppProvider>
