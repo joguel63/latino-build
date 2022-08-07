@@ -22,6 +22,7 @@ import { AppProvider } from "core/providers";
 import Regulations from "pages/regulations";
 import Statutes from "pages/statutes";
 import Spaces from "./pages/spaces";
+import Contact from "./pages/contact";
 import PresidentsPage from "pages/presidents";
 // --openssl-legacy-provider
 function App() {
@@ -89,6 +90,9 @@ function App() {
             </Route>
             <Route path="/blog">
               <HomeOne/>
+            </Route>
+            <Route path="/contact">
+              <Contact/>
             </Route>
           </Switch>
         </AppProvider>
