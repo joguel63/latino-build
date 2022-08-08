@@ -23,6 +23,7 @@ import Regulations from "pages/regulations";
 import Statutes from "pages/statutes";
 import Spaces from "./pages/spaces";
 import PresidentsPage from "pages/presidents";
+import { HiddenAlert } from "components/alert";
 // --openssl-legacy-provider
 function App() {
   return (
@@ -76,21 +77,22 @@ function App() {
               <AdministrativePersonal />
             </Route>
             <Route path="/regulations">
-              <Regulations/>
+              <Regulations />
             </Route>
             <Route path="/statutes">
-              <Statutes/>
+              <Statutes />
             </Route>
             <Route path="/spaces">
-              <Spaces/>
+              <Spaces />
             </Route>
             <Route path="/presidents">
-              <PresidentsPage/>
+              <PresidentsPage />
             </Route>
             <Route path="/blog">
-              <HomeOne/>
+              <HomeOne />
             </Route>
           </Switch>
+          <HiddenAlert />
         </AppProvider>
       </Router>
     </div>
