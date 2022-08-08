@@ -24,6 +24,7 @@ import Statutes from "pages/statutes";
 import Spaces from "./pages/spaces";
 import PresidentsPage from "pages/presidents";
 import { HiddenAlert } from "components/alert";
+import BlogPage from "pages/blog";
 // --openssl-legacy-provider
 function App() {
   return (
@@ -89,7 +90,7 @@ function App() {
               <PresidentsPage />
             </Route>
             <Route path="/blog">
-              <HomeOne />
+              <BlogPage/>
             </Route>
           </Switch>
           <HiddenAlert />
