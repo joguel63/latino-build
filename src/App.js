@@ -23,6 +23,7 @@ import Regulations from "pages/regulations";
 import Statutes from "pages/statutes";
 import Spaces from "./pages/spaces";
 import PresidentsPage from "pages/presidents";
+import BlogPage from "pages/blog";
 // --openssl-legacy-provider
 function App() {
   return (
@@ -88,7 +89,7 @@ function App() {
               <PresidentsPage/>
             </Route>
             <Route path="/blog">
-              <HomeOne/>
+              <BlogPage/>
             </Route>
           </Switch>
         </AppProvider>
