@@ -5,6 +5,20 @@
     background: red;
 }
 
+.carouselCropped {
+  width: 100%;
+  height: 400px; 
+  object-fit: cover;
+  border: 2px solid $secundaryDark;
+}
+
+.homeLogoDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  
 .seat-content {
     position: absolute;
     top: 50%;

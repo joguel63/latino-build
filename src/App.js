@@ -24,6 +24,8 @@ import Statutes from "pages/statutes";
 import Spaces from "./pages/spaces";
 import Contact from "./pages/contact";
 import PresidentsPage from "pages/presidents";
+import { HiddenAlert } from "components/alert";
+import BlogPage from "pages/blog";
 // --openssl-legacy-provider
 function App() {
   return (
@@ -77,24 +79,25 @@ function App() {
               <AdministrativePersonal />
             </Route>
             <Route path="/regulations">
-              <Regulations/>
+              <Regulations />
             </Route>
             <Route path="/statutes">
-              <Statutes/>
+              <Statutes />
             </Route>
             <Route path="/spaces">
-              <Spaces/>
+              <Spaces />
             </Route>
             <Route path="/presidents">
-              <PresidentsPage/>
+              <PresidentsPage />
             </Route>
             <Route path="/blog">
-              <HomeOne/>
+              <BlogPage/>
             </Route>
             <Route path="/contact">
               <Contact/>
             </Route>
           </Switch>
+          <HiddenAlert />
         </AppProvider>
       </Router>
     </div>
