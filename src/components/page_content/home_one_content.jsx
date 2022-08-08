@@ -20,21 +20,6 @@ export default function HomeOneContent() {
           <div className="title">
             <h2>Noticias</h2>
           </div>
-          <HomeNewsItem
-            label="Jornada de carnetizacion"
-            src={noticia1}
-            alt=""
-          ></HomeNewsItem>
-          <HomeNewsItem
-            label="Jornada de carnetizacion"
-            src={noticia1}
-            alt=""
-          ></HomeNewsItem>
-          <HomeNewsItem
-            label="Jornada de carnetizacion"
-            src={noticia1}
-            alt=""
-          ></HomeNewsItem>
         </div>
       </div>
     </div>

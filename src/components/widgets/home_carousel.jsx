@@ -1,9 +1,9 @@
 import React from "react";
-import carousel1 from "../../assets/images/carousel/1.jpg";
-import carousel2 from "../../assets/images/carousel/2.jpg";
-import carousel3 from "../../assets/images/carousel/3.jpg";
-import carousel4 from "../../assets/images/carousel/4.jpg";
-import carousel5 from "../../assets/images/carousel/5.jpg";
+import carousel1 from "assets/images/carousel/1.jpg";
+import carousel2 from "assets/images/carousel/2.jpg";
+import carousel3 from "assets/images/carousel/3.jpg";
+import carousel4 from "assets/images/carousel/4.jpg";
+import carousel5 from "assets/images/carousel/5.jpg";
 import { Carousel, CarouselItem } from "react-bootstrap";
 
 const images = [
@@ -14,7 +14,7 @@ const images = [
   { src: carousel5,alt: "", label:"Necesito mejores fotos" },
 ];
 
-export default function HomeCarousel() {
+export default function HomeCarousel({news}) {
   return (
     <Carousel className="w-100">
       {images.map((image, index) => (
@@ -24,7 +24,6 @@ export default function HomeCarousel() {
             <h3>{image.label}</h3>
           </Carousel.Caption>
         </CarouselItem>
-        
       ))}
     </Carousel>
   );
