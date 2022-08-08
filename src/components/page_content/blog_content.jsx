@@ -1,7 +1,5 @@
-import React, { useEffect } from "react";
-import { getAllNews } from "services/NewsService";
+import React from "react";
 
-export default function BlogContent(){
-    
-    return(<div></div>);
+export default function BlogContent() {
+  return <div></div>;
 }
