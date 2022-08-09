@@ -1,24 +1,19 @@
+import FormContact from "components/form-contact";
 import React from "react";
-import Map from '../Map.js';
+import { Form } from "react-bootstrap";
+
 
 export default function ContactContent() {
     return(
-        <div className="container-body">
+        <div className="container-body py-5">
             <div className="container">
                 <div className="row">
-                    <div className="col-12">
-                        <h1>title</h1>
+                    <div className="col-3">
+                        MAP GOOGLE
                     </div>
-                    <div className="col-4">
-                        <Map
-                            googleMapURL = {"https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyB2Lp8UFU7mA0MrzM_QwFteM-PfMmt6CQw"}
-                            containerElement = {<div style={{height: '400px'}}/>}
-                            mapElement = {<div style={{height: '100%'}} />}
-                            loadingElement = {<p>Cargando</p>}
-                        />
-                    </div>
-                    <div className="col-8">
-                        asd
+                    <div className="col-9">
+                        <h2 class="pb-4">Enviar Correo Electronico</h2>
+                        <FormContact></FormContact>
                     </div>
                 </div>
             </div>
