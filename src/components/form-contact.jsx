@@ -24,7 +24,7 @@ export default function FormContact() {
 
       <Form.Group className="mb-3 input-form" controlId="i-mensaje">
         <Form.Label>Mensaje</Form.Label>
-        <Form.Control type="text" placeholder="Nombre" />
+        <Form.Control as="textarea" rows={3} placeholder="Mensaje" />
       </Form.Group>
       
       <Button variant="primary" type="submit">
