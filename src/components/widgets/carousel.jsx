@@ -14,9 +14,9 @@ const images = [
   { src: carousel5,alt: "", label:"Necesito mejores fotos" },
 ];
 
-export default function HomeCarousel({news}) {
+export default function NewsCarousel({news}) {
   return (
-    <Carousel className="w-100">
+    <Carousel className="w-100 newsCarousel">
       {images.map((image, index) => (
         <CarouselItem key={index}>
           <img className="d-block carouselCropped" src={image.src} alt={image.alt} />

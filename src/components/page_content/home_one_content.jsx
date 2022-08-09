@@ -1,8 +1,6 @@
-import HomeNewsItem from "components/widgets/home_news_item";
 import React from "react";
-import noticia1 from "../../assets/images/news/noticia1.jpg";
 import logo from "../../assets/images/logo2.jpg";
-import HomeCarousel from "components/widgets/home_carousel";
+import NewsCarousel from "components/widgets/carousel";
 
 
 export default function HomeOneContent() {
@@ -12,10 +10,10 @@ export default function HomeOneContent() {
         <div className="row justify-content-center">
           <div className="homeLogoDiv">
             <h1>Centro Latino San Cristobal</h1>
-            <img className="homeLogo img-fluid" width={200} src={logo} />
+            <img className="homeLogo img-fluid" alt="logo" width={200} src={logo} />
           </div>
           <div className="col-xl-12">
-          <HomeCarousel/>
+          <NewsCarousel/>
           </div>
           <div className="title">
             <h2>Noticias</h2>
