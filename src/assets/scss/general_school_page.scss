@@ -1,0 +1,20 @@
+@import "variable.scss";
+
+.schoolImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.schoolTable {
+  margin-top: 34px;
+  cursor: auto;
+  width: 100%;
+  border: 1px solid $primaryDark;
+  border-radius: 5px;
+}
+
+.schoolTable thead {
+  background-color: $primaryLight;
+  color: white;
+}

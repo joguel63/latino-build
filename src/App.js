@@ -32,6 +32,11 @@ import ServiceRestaurant from "pages/club_services/service_restaurant";
 import ServiceSauna from "pages/club_services/service_sauna";
 import ServiceBar from "pages/club_services/bar_teather";
 import ServiceSpa from "pages/club_services/service_spa";
+import BaseballSchool from "pages/sport_schools/schools_baseball";
+import KarateSchool from "pages/sport_schools/schools_karate";
+import SoccerSchool from "pages/sport_schools/schools_soccer";
+import SwimmingSchool from "pages/sport_schools/schools_swimming";
+import VolleySchool from "pages/sport_schools/schools_volley";
 // --openssl-legacy-provider
 function App() {
   return (
@@ -119,6 +124,21 @@ function App() {
             </Route>
             <Route path="/service_bar_teather">
               <ServiceBar/>
+            </Route>
+            <Route path="/school_baseball">
+              <BaseballSchool/>
+            </Route>
+            <Route path="/school_karate">
+              <KarateSchool/>
+            </Route>
+            <Route path="/school_soccer">
+              <SoccerSchool/>
+            </Route>
+            <Route path="/school_swimming">
+              <SwimmingSchool/>
+            </Route>
+            <Route path="/school_volley">
+              <VolleySchool/>
             </Route>
           </Switch>
           <HiddenAlert />

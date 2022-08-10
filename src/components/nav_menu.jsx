@@ -97,11 +97,11 @@ export default function NavMenu(props) {
                   title="Escuelas deportivas"
                   icon="fa fa-futbol-o"
                   subitems={[
-                    { link: "/schools_soccer", label: "Escuela Futbol" },
-                    { link: "/schools_karate", label: "Escuela Karate" },
-                    { link: "/schools_volley", label: "Escuela Volleyball"},
-                    { link: "/schools_swimming", label: "Escuela Natacion" },
-                    { link: "/schools_baseball", label: "Escuela Beisbol" }
+                    { link: "/school_soccer", label: "Escuela Futbol" },
+                    { link: "/school_karate", label: "Escuela Karate" },
+                    { link: "/school_volley", label: "Escuela Volleyball"},
+                    { link: "/school_swimming", label: "Escuela Natacion" },
+                    { link: "/school_baseball", label: "Escuela Beisbol" }
                   ]}
                 />
                 <NavMenuItem title="Contacto" icon="fa fa-envelope" />
