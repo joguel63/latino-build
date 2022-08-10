@@ -78,7 +78,10 @@ export default function NavMenu(props) {
                   icon="fa fa-futbol-o"
                   subitems={[{ link: "/soccerSchool", label: "Futbol" }]}
                 />
-                <NavMenuItem title="Contacto" icon="fa fa-envelope" />
+                <NavMenuItem title="Contacto"
+                             icon="fa fa-envelope"
+                             route="/contact"
+                />
               </MetisMenu>
             </nav>
           </div>
