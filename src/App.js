@@ -22,6 +22,7 @@ import { AppProvider } from "core/providers";
 import Regulations from "pages/regulations";
 import Statutes from "pages/statutes";
 import Spaces from "./pages/spaces";
+import Contact from "./pages/contact";
 import PresidentsPage from "pages/presidents";
 import { HiddenAlert } from "components/alert";
 import BlogPage from "pages/blog";
@@ -103,6 +104,9 @@ function App() {
             </Route>
             <Route path="/blog">
               <BlogPage/>
+            </Route>
+            <Route path="/contact">
+              <Contact/>
             </Route>
             <Route path="/service_gym">
               <ServiceGym/>

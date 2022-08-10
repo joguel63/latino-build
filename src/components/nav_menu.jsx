@@ -104,7 +104,10 @@ export default function NavMenu(props) {
                     { link: "/school_baseball", label: "Escuela Beisbol" }
                   ]}
                 />
-                <NavMenuItem title="Contacto" icon="fa fa-envelope" />
+                <NavMenuItem title="Contacto"
+                             icon="fa fa-envelope"
+                             route="/contact"
+                />
               </MetisMenu>
             </nav>
           </div>
