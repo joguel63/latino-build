@@ -25,6 +25,13 @@ import Spaces from "./pages/spaces";
 import PresidentsPage from "pages/presidents";
 import { HiddenAlert } from "components/alert";
 import BlogPage from "pages/blog";
+import ServiceGym from "pages/club_services/service_gym";
+import ServiceParty from "pages/club_services/service_party";
+import ServicePresentations from "pages/club_services/service_presentations";
+import ServiceRestaurant from "pages/club_services/service_restaurant";
+import ServiceSauna from "pages/club_services/service_sauna";
+import ServiceBar from "pages/club_services/bar_teather";
+import ServiceSpa from "pages/club_services/service_spa";
 // --openssl-legacy-provider
 function App() {
   return (
@@ -91,6 +98,27 @@ function App() {
             </Route>
             <Route path="/blog">
               <BlogPage/>
+            </Route>
+            <Route path="/service_gym">
+              <ServiceGym/>
+            </Route>
+            <Route path="/service_party">
+              <ServiceParty/>
+            </Route>
+            <Route path="/service_presentations">
+              <ServicePresentations/>
+            </Route>
+            <Route path="/service_restaurant">
+              <ServiceRestaurant/>
+            </Route>
+            <Route path="/service_spa">
+              <ServiceSpa/>
+            </Route>
+            <Route path="/service_sauna">
+              <ServiceSauna/>
+            </Route>
+            <Route path="/service_bar_teather">
+              <ServiceBar/>
             </Route>
           </Switch>
           <HiddenAlert />
