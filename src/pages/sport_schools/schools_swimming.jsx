@@ -14,7 +14,7 @@ export default function SwimmingSchool() {
             <div className="col-xl-12">
               <img className="schoolImage" src={img} alt="natación" />
               <div className="row justify-content-between">
-                <div className="col-xl-3">
+                <div className="col-xl-12">
                   <table className="schoolTable">
                     <thead>
                       <tr>
@@ -30,7 +30,7 @@ export default function SwimmingSchool() {
                     </tbody>
                   </table>
                 </div>
-                <div className="col-xl-6">
+                <div className="col-xl-12">
                   <table className="schoolTable">
                     <thead>
                       <tr>

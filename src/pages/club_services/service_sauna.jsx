@@ -1,6 +1,6 @@
 import PageLayout from "layouts/page_layout";
 import React from "react";
-import { Breadcrumb } from "react-bootstrap";
+import Breadcrumb from "components/breadcrumb";
 import img from "../../assets/images/spaces/sauna.jpeg";
 
 export default function ServiceSauna() {

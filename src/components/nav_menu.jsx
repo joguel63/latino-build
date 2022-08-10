@@ -73,11 +73,11 @@ export default function NavMenu(props) {
                   subitems={[
                     { link: "/sports_balls", label: "Bolas criollas" },
                     { link: "/sports_tenis", label: "Tenis" },
-                    { link: "/sports_volley", label: "Volleyball" },
-                    { link: "/sports_baseball", label: "Baseball" },
+                    { link: "/sports_volleyball", label: "Volleyball" },
+                    { link: "/sports_baseball", label: "Beisbol" },
                     { link: "/sports_soccer", label: "Futbol" },
                     { link: "/sports_basquet", label: "Basquet" },
-                    { link: "/sports_swiming", label: "Natacion" },
+                    { link: "/sports_swimming", label: "Natacion" },
                   ]}
                 ></NavMenuItem>
                 <NavMenuItem

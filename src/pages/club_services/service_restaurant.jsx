@@ -1,6 +1,6 @@
 import PageLayout from "layouts/page_layout";
 import React from "react";
-import { Breadcrumb } from "react-bootstrap";
+import Breadcrumb from "components/breadcrumb";
 import img from "../../assets/images/spaces/restaurant.jpg";
 
 export default function ServiceRestaurant() {
@@ -11,7 +11,7 @@ export default function ServiceRestaurant() {
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
-              <h2>Restaurant</h2>
+              <h2>Restaurant Latinos</h2>
             </div>
             <div className="col-xl-6">
             <img className="serviceImage" src={img} alt="gym" />

@@ -1,6 +1,6 @@
 import PageLayout from "layouts/page_layout";
 import React from "react";
-import { Breadcrumb } from "react-bootstrap";
+import Breadcrumb from "components/breadcrumb";
 import img from "../../assets/images/spaces/bar.jpeg";
 
 export default function ServiceBar() {
