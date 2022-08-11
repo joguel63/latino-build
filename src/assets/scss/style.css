@@ -1896,7 +1896,6 @@ button {
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 2px solid #c10000;
 }
 
 .homeLogoDiv {
@@ -2097,6 +2096,12 @@ button {
   background-color: #286d00;
 }
 
+.input-form .input {
+  border: 0;
+  border-bottom: 1px solid;
+  border-radius: 0;
+}
+
 .newsCarousel {
   margin-bottom: 50px;
 }
@@ -2147,7 +2152,70 @@ button {
   color: #5a9c36;
 }
 
+.schoolImage {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.schoolTable {
+  margin-top: 34px;
+  cursor: auto;
+  width: 100%;
+  border: 1px solid #004100;
+  border-radius: 5px;
+}
+
+.schoolTable thead {
+  background-color: #5a9c36;
+  color: white;
+}
+
+.serviceImage {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.serviceDescription {
+  width: 100%;
+}
+
+.serviceTable {
+  cursor: auto;
+  width: 100%;
+  border: 1px solid #004100;
+  border-radius: 5px;
+}
+
+.serviceTable tr {
+  border-bottom: 1px solid #004100;
+}
+
+.serviceTable td {
+  font-size: larger;
+}
+
+.serviceTable tr:hover {
+  background-color: #004100;
+  color: white;
+}
+
 .user-grid-container {
-  border: red solid 1px;
-  padding: 16px;
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.create-user-button {
+  align-self: flex-end;
+}
+
+.user-form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
 }/*# sourceMappingURL=style.css.map */
