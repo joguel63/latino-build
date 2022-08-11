@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Modal, Button } from "react-bootstrap";
 import useToggle from "../hooks/use_toggle";
-import logoImg from "../assets/images/logo.png";
+import logoImg from "../assets/images/logoSmall.png";
 import { Link } from "react-router-dom";
 import { AppContext } from "core/contexts";
 import { LoginButton, UserDropdown } from "components/header-components";
