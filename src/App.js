@@ -25,6 +25,9 @@ import Spaces from "./pages/spaces";
 import PresidentsPage from "pages/presidents";
 import { HiddenAlert } from "components/alert";
 import BlogPage from "pages/blog";
+import { PrivateRoute } from "core/router/private-route";
+import { Dashboard } from "core/modules/dashboard";
+import { roles } from "core/utils";
 // --openssl-legacy-provider
 function App() {
   return (
@@ -90,8 +93,13 @@ function App() {
               <PresidentsPage />
             </Route>
             <Route path="/blog">
-              <BlogPage/>
+              <BlogPage />
             </Route>
+            <PrivateRoute
+              component={Dashboard}
+              path="/dashboard"
+              role={roles.admin}
+            />
           </Switch>
           <HiddenAlert />
         </AppProvider>

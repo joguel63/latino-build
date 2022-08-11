@@ -3,13 +3,17 @@ import { useHistory } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
-import { useLoginService } from "core/hooks";
+import { useLoginService, useUser } from "core/hooks";
 import Palette from "assets/css/palete";
+import { roles } from "core/utils";
 
 export const UserDropdown = () => {
   const { logoutUser } = useLoginService();
+  const { user, checkRole } = useUser();
   const history = useHistory();
   const navigateTo = (path) => history.push(path);
+
+  console.log(user);
   return (
     <Dropdown className="custom-dropdown">
       <Dropdown.Toggle variant="success" as="div" className="d-inline-block">
@@ -26,8 +30,12 @@ export const UserDropdown = () => {
         <Dropdown.Item onClick={() => navigateTo("/payment")}>
           Deuda
         </Dropdown.Item>
-        {/*         <Dropdown.Item href="#/action-3">Event Created</Dropdown.Item>
-        <Dropdown.Item href="#/action-4">Event Attended</Dropdown.Item>
+        {checkRole(roles.admin) && (
+          <Dropdown.Item onClick={() => navigateTo("/dashboard")}>
+            Administracion
+          </Dropdown.Item>
+        )}
+        {/*   <Dropdown.Item href="#/action-4">Event Attended</Dropdown.Item>
         <Dropdown.Item href="#/action-5">Elements</Dropdown.Item> */}
         <Dropdown.Item onClick={logoutUser}>Cerrar Sesión</Dropdown.Item>
       </Dropdown.Menu>
