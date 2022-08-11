@@ -61,22 +61,48 @@ export default function NavMenu(props) {
                 <NavMenuItem
                   title="Cultura"
                   icon="fa fa-music "
-                  subitems={[{ link: "/coral", label: "Coral" }]}
+                  subitems={[
+                    { link: "/culture_coral", label: "Coral" },
+                    { link: "/culture_teatro", label: "Teatro" },
+                    { link: "/culture_danza", label: "Danza" },
+                  ]}
                 ></NavMenuItem>
                 <NavMenuItem
                   title="Deportes"
                   icon="fa fa-trophy"
-                  subitems={[{ link: "/tenis", label: "Tenis" }]}
+                  subitems={[
+                    { link: "/sports_balls", label: "Bolas criollas" },
+                    { link: "/sports_tenis", label: "Tenis" },
+                    { link: "/sports_volleyball", label: "Volleyball" },
+                    { link: "/sports_baseball", label: "Beisbol" },
+                    { link: "/sports_soccer", label: "Futbol" },
+                    { link: "/sports_basquet", label: "Basquet" },
+                    { link: "/sports_swimming", label: "Natacion" },
+                  ]}
                 ></NavMenuItem>
                 <NavMenuItem
                   title="Servicios"
                   icon="fa fa-briefcase"
-                  subitems={[{ link: "/restaurant", label: "Restaurant" }]}
+                  subitems={[
+                    { link: "/service_restaurant", label: "Restaurant" },
+                    { link: "/service_bar_teather", label: "Teatro bar" },
+                    { link: "/service_party", label: "Sala de fiestas" },
+                    { link: "/service_spa", label: "Spa" },
+                    { link: "/service_gym", label: "Gimnasio"},
+                    { link: "/service_sauna", label: "Sauna" },
+                    { link: "/service_presentations", label: "Salón de reuniones" }
+                  ]}
                 ></NavMenuItem>
                 <NavMenuItem
                   title="Escuelas deportivas"
                   icon="fa fa-futbol-o"
-                  subitems={[{ link: "/soccerSchool", label: "Futbol" }]}
+                  subitems={[
+                    { link: "/school_soccer", label: "Escuela Futbol" },
+                    { link: "/school_karate", label: "Escuela Karate" },
+                    { link: "/school_volley", label: "Escuela Volleyball"},
+                    { link: "/school_swimming", label: "Escuela Natacion" },
+                    { link: "/school_baseball", label: "Escuela Beisbol" }
+                  ]}
                 />
                 <NavMenuItem title="Contacto"
                              icon="fa fa-envelope"

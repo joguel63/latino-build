@@ -26,6 +26,28 @@ import Contact from "./pages/contact";
 import PresidentsPage from "pages/presidents";
 import { HiddenAlert } from "components/alert";
 import BlogPage from "pages/blog";
+import ServiceGym from "pages/club_services/service_gym";
+import ServiceParty from "pages/club_services/service_party";
+import ServicePresentations from "pages/club_services/service_presentations";
+import ServiceRestaurant from "pages/club_services/service_restaurant";
+import ServiceSauna from "pages/club_services/service_sauna";
+import ServiceBar from "pages/club_services/bar_teather";
+import ServiceSpa from "pages/club_services/service_spa";
+import BaseballSchool from "pages/sport_schools/schools_baseball";
+import KarateSchool from "pages/sport_schools/schools_karate";
+import SoccerSchool from "pages/sport_schools/schools_soccer";
+import SwimmingSchool from "pages/sport_schools/schools_swimming";
+import VolleySchool from "pages/sport_schools/schools_volley";
+import BallsSport from "pages/sports/sports_balls";
+import DanceCulture from "pages/culture/culture_dance";
+import CoralCulture from "pages/culture/culture_coral";
+import TeatherCulture from "pages/culture/culture_teather";
+import BaseballSport from "pages/sports/sports_baseball";
+import SoccerSport from "pages/sports/sports_soccer";
+import SwimmingSport from "pages/sports/sports_swimming";
+import TenisSport from "pages/sports/sports_tenis";
+import VolleySport from "pages/sports/sports_volleyball";
+import BasquetSport from "pages/sports/sports_basquet";
 // --openssl-legacy-provider
 function App() {
   return (
@@ -95,6 +117,72 @@ function App() {
             </Route>
             <Route path="/contact">
               <Contact/>
+            </Route>
+            <Route path="/service_gym">
+              <ServiceGym/>
+            </Route>
+            <Route path="/service_party">
+              <ServiceParty/>
+            </Route>
+            <Route path="/service_presentations">
+              <ServicePresentations/>
+            </Route>
+            <Route path="/service_restaurant">
+              <ServiceRestaurant/>
+            </Route>
+            <Route path="/service_spa">
+              <ServiceSpa/>
+            </Route>
+            <Route path="/service_sauna">
+              <ServiceSauna/>
+            </Route>
+            <Route path="/service_bar_teather">
+              <ServiceBar/>
+            </Route>
+            <Route path="/school_baseball">
+              <BaseballSchool/>
+            </Route>
+            <Route path="/school_karate">
+              <KarateSchool/>
+            </Route>
+            <Route path="/school_soccer">
+              <SoccerSchool/>
+            </Route>
+            <Route path="/school_swimming">
+              <SwimmingSchool/>
+            </Route>
+            <Route path="/school_volley">
+              <VolleySchool/>
+            </Route>
+            <Route path="/sports_balls">
+              <BallsSport/>
+            </Route>
+            <Route path="/sports_baseball">
+              <BaseballSport/>
+            </Route>
+            <Route path="/sports_basquet">
+              <BasquetSport/>
+            </Route>
+            <Route path="/sports_soccer">
+              <SoccerSport/>
+            </Route>
+            <Route path="/sports_swimming">
+              <SwimmingSport/>
+            </Route>
+            <Route path="/sports_tenis">
+              <TenisSport/>
+            </Route>
+            <Route path="/sports_volleyball">
+              <VolleySport/>
+            </Route>
+            <Route path="/culture_dance">
+              <DanceCulture/>
+            </Route>
+            <Route path="/culture_coral">
+              <CoralCulture/>
+            </Route>
+            <Route path="/culture_teather">
+              <TeatherCulture/>
             </Route>
           </Switch>
           <HiddenAlert />
