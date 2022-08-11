@@ -63,8 +63,8 @@ export default function NavMenu(props) {
                   icon="fa fa-music "
                   subitems={[
                     { link: "/culture_coral", label: "Coral" },
-                    { link: "/culture_teatro", label: "Teatro" },
-                    { link: "/culture_danza", label: "Danza" },
+                    { link: "/culture_teather", label: "Teatro" },
+                    { link: "/culture_dance", label: "Danza" },
                   ]}
                 ></NavMenuItem>
                 <NavMenuItem

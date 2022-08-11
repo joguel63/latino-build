@@ -1,23 +1,13 @@
 import React from "react";
 import memberImg_01 from "../../assets/images/events/event-main3.jpg";
 
-export default function DirectionBoardContent() {
+export default function AdministrativePersonalContent() {
   return (
     <div className="content-body">
       <div className="container">
         <div className="row justify-content-between">
           <div className="col-xl-12 text-center">
-            <h3>Junta directiva del Centro Latino</h3>
-            <p className="justify-content">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Similique incidunt recusandae harum consequatur perspiciatis
-              repellendus maiores aliquam, atque dolorem fugit quis, possimus
-              magni sint rerum! Nobis laboriosam officia ea deleniti? Lorem
-              ipsum dolor sit amet, consectetur adipisicing elit. Similique
-              incidunt recusandae harum consequatur perspiciatis repellendus
-              maiores aliquam, atque dolorem fugit quis, possimus magni sint
-              rerum! Nobis laboriosam officia ea deleniti?
-            </p>
+            <h3>Personal administrativo del Club Latino</h3>
             <img className="" src={memberImg_01} alt="placeholder" />
             <p></p>{/* como mierda pongo un espacio???*/}
             <table className="table">
