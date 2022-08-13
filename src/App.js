@@ -48,6 +48,9 @@ import SwimmingSport from "pages/sports/sports_swimming";
 import TenisSport from "pages/sports/sports_tenis";
 import VolleySport from "pages/sports/sports_volleyball";
 import BasquetSport from "pages/sports/sports_basquet";
+import { PrivateRoute } from "core/router/private-route";
+import { Dashboard } from "core/modules/dashboard";
+import { roles } from "core/utils";
 // --openssl-legacy-provider
 function App() {
   return (
@@ -113,7 +116,7 @@ function App() {
               <PresidentsPage />
             </Route>
             <Route path="/blog">
-              <BlogPage/>
+              <BlogPage />
             </Route>
             <Route path="/contact">
               <Contact/>
@@ -184,6 +187,11 @@ function App() {
             <Route path="/culture_teather">
               <TeatherCulture/>
             </Route>
+            <PrivateRoute
+              component={Dashboard}
+              path="/dashboard"
+              role={roles.admin}
+            />
           </Switch>
           <HiddenAlert />
         </AppProvider>

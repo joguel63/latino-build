@@ -29,7 +29,5 @@ export const useLoginService = () => {
     setIsLoged(false);
   };
 
-  const checkRole = (role) => true;
-
-  return { loginUser, logoutUser, haveUser, checkRole };
+  return { loginUser, logoutUser, haveUser };
 };
