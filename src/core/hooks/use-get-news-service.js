@@ -2,19 +2,15 @@ import { getNews } from "core/services";
 
 export const useGetNewsService = () =>{
 
-    const getNewsPage = () =>{
+    const getNewsPage = (setNews) => {
         try {
-            getNews().then(({data})=> {
+            getNews().then(({data}) => {
                 if(!data) return;
-
-                console.log(data);
-
-            })
-            
+                setNews(data);             
+            });
         } catch (error) {
-            
+            console.log(error);
         }
-
     }
     return {getNewsPage}
 }

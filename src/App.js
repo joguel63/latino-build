@@ -25,7 +25,7 @@ import Spaces from "./pages/spaces";
 import Contact from "./pages/contact";
 import PresidentsPage from "pages/presidents";
 import { HiddenAlert } from "components/alert";
-import BlogPage from "pages/blog";
+import BlogPage from "pages/news";
 import ServiceGym from "pages/club_services/service_gym";
 import ServiceParty from "pages/club_services/service_party";
 import ServicePresentations from "pages/club_services/service_presentations";
