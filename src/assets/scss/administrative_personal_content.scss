@@ -8,5 +8,10 @@
                 font-weight: 600;
             }
         }
+        &.info {
+            .col-12 {
+                border-top: none;
+            }
+        }
     }
 }
