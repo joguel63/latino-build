@@ -64,20 +64,21 @@ export default function AdministrativePersonalContent() {
                 El Comité de Damas del Centro Latino, tiene como tarea apoyar el trabajo social, cultural, deportivo de la Junta Directiva y organizar actividades en pro de los beneficios del socio y su grupo familiar.
               "/>
               <div className="row personal-content d-flex justify-content-center">
-                <PersonalCharge name="Sra. Nelly Milla de Ramírez"/>
-                <PersonalCharge name="Sra. Ligia Niño de Varela"/>
-                <PersonalCharge name="Abg. Sul Molina de Chacón"/>
-                <PersonalCharge name="Lcda. Maury Rudas de Hernández"/>
-                <PersonalCharge name="Sra. María González de Molina"/>
-                <PersonalCharge name="Sra. Blanca Acevedo de Calderón"/>
-                <PersonalCharge name="Lcda. Mary Sánchez de Rincón"/>
-                <PersonalCharge name="Sra. Eugenia Delgado"/>
+                <PersonalCharge name="Sra. Nelly Milla de Ramírez" charge="Dama de Honor"/>
+                <PersonalCharge name="Sra. Ligia Niño de Varela" charge="Dama de Honor"/>
+                <PersonalCharge name="Abg. Sul Molina de Chacón" charge="Dama de Honor"/>
+                <PersonalCharge name="Lcda. Maury Rudas de Hernández" charge="Dama de Honor"/>
+                <PersonalCharge name="Sra. María González de Molina" charge="Dama de Honor"/>
+                <PersonalCharge name="Sra. Blanca Acevedo de Calderón" charge="Dama de Honor"/>
+                <PersonalCharge name="Lcda. Mary Sánchez de Rincón" charge="Dama de Honor"/>
+                <PersonalCharge name="Sra. Eugenia Delgado" charge="Dama de Honor"/>
               </div>
               <div className=" mt-4 row personal-content info d-flex justify-content-center">
                 <PersonalCharge name="comitededamas.centrolatino@gmail.com" charge="e-mail"/>
               </div>
             </section><section className="section-personal">
               <AreaInfo area="Personal Administrativo"/>
+              <img className="mb-5" src={memberImg_01} alt="placeholder" />
               <div className=" mt-4 row personal-content d-flex justify-content-center">
                 <PersonalCharge name="name" charge="administrador"/>
                 <PersonalCharge name="name" charge="contador"/>

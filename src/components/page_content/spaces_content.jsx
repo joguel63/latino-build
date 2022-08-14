@@ -30,22 +30,22 @@ export default function SpacesContent() {
             <div className="col-xl-12">
               <div className="peoples-photo text-center">
                 <div className="row justify-content-center">
+                  <SpaceImg src={conferencias} title="Salon de conferencias"description={description}/>
+                  <SpaceImg src={teatro} title="Salon de fiestas con tarima"description={description}/>
+                  <SpaceImg src={bohio} title="Bohios Moderno" description={description}/>
+                  <SpaceImg src={salon} title="Salon de Fiestas" description={description}/>
+                  <SpaceImg src={restaurant} title="Restaurant" description={description}/>
+                  <SpaceImg src={bar} title="Bar" description={description}/>
                   <SpaceImg src={piscina} title="Piscina" description={description}/>
+                  <SpaceImg src={parque} title="Parque Infantil"description={description}/>
+                  <SpaceImg src={bolas} title="Cancha de Bolas Criollas" description={description}/>
+                  <SpaceImg src={softbol} title="Cancha de Softbol" description={description}/>
                   <SpaceImg src={futbol} title="Cancha de futbol" description={description}/>
                   <SpaceImg src={tenis} title="Cancha de tenis" description={description}/>
-                  <SpaceImg src={bohio} title="Bohios Moderno" description={description}/>
-                  <SpaceImg src={spa} title="Spa" description={description}/>
-                  <SpaceImg src={gym} title="Gymnasio" description={description}/>
-                  <SpaceImg src={restaurant} title="Restaurant" description={description}/>
-                  <SpaceImg src={salon} title="Salon de Fiestas" description={description}/>
-                  <SpaceImg src={bar} title="Bar" description={description}/>
-                  <SpaceImg src={softbol} title="Cancha de Softbol" description={description}/>
-                  <SpaceImg src={bolas} title="Cancha de Bolas Criollas" description={description}/>
                   <SpaceImg src={karate} title="Salon Karate" description={description}/>
+                  <SpaceImg src={gym} title="Gymnasio" description={description}/>
+                  <SpaceImg src={spa} title="Spa" description={description}/>
                   <SpaceImg src={estacionamiento} title="Estacionamiento"description={description}/>
-                  <SpaceImg src={parque} title="Parque Infantil"description={description}/>
-                  <SpaceImg src={teatro} title="Salon de fiestas con tarima"description={description}/>
-                  <SpaceImg src={conferencias} title="Salon de conferencias"description={description}/>
                 </div>
               </div>
             </div>
