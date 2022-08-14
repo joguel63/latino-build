@@ -4,10 +4,10 @@ import DisiplineTeam from "components/widgets/disipline_team";
 
 
 import deportista from "../../assets/images/sports/bolas_criollas/image-sportman.jpg";
-import img from "../../assets/images/sports/balls.jpg";
+import img from "../../assets/images/sports/base.jpg";
 
 
-export default function SportBallsContent() {
+export default function SportBaseballContent() {
     return(
         <>
         <div id="bolas-criollas">

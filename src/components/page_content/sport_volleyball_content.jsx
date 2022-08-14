@@ -4,13 +4,13 @@ import DisiplineTeam from "components/widgets/disipline_team";
 
 
 import deportista from "../../assets/images/sports/bolas_criollas/image-sportman.jpg";
-import img from "../../assets/images/sports/balls.jpg";
+import img from "../../assets/images/sports/volley.jpg";
 
 
-export default function SportBallsContent() {
+export default function SportVolleyballContent() {
     return(
         <>
-        <div id="bolas-criollas">
+        <div id="Tenis">
             <div className="container-fluid sport-bg-image p-0" style={{backgroundImage: `URL(${img})`}}></div>
                 <DisiplineCoordinator name="nombre"/>
                 <section className="section-team">
