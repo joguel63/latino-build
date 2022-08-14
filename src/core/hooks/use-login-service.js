@@ -15,11 +15,19 @@ export const useLoginService = () => {
     });
   };
 
+  const successMessage = () => {
+    setMessage({
+      message: "Bienvenido/a al Latino",
+      variant: variants.success,
+    });
+  };
+
   const loginUser = (user) => {
     login(user).then(({ data }) => {
       if (data) {
         localStorage.setItem("user", JSON.stringify(data));
         setIsLoged(true);
+        successMessage();
       } else errorMessage();
     });
   };

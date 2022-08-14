@@ -1,9 +1,8 @@
 import React from "react";
-import { Field, Formik, Form } from "formik";
+import { Formik, Form } from "formik";
 import { Modal, Button } from "react-bootstrap";
 import { validateCreateUser } from "core/validators";
 import { useUsersServices } from "core/hooks";
-import { roles } from "core/utils";
 import { CreateUser } from "./forms/create-user";
 
 export const UserModal = (props) => {
@@ -21,10 +20,9 @@ export const UserModal = (props) => {
   };
 
   const handleSubmit = (values, { setSubmitting }) => {
-    if (user) update(values, onHide);
-    else create(values, onHide);
+    if (user) update(values, onHide, refreshUsers);
+    else create(values, onHide, refreshUsers);
     setSubmitting(false);
-    refreshUsers();
   };
 
   return (
@@ -45,7 +43,7 @@ export const UserModal = (props) => {
                 Cancelar
               </Button>
               <Button variant="primary" type="submit" disabled={isSubmitting}>
-                Crear Usuario
+                {!!user ? "Editar" : "Crear"} Usuario
               </Button>
             </Modal.Footer>
           </Form>

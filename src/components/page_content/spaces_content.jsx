@@ -1,7 +1,6 @@
 import React from 'react';
 // import SidebarOne from "../sidebar_one";
 // import Breadcrumb from "../breadcrumb";
-import memberImg_01 from "../../assets/images/events/event-main.jpg";
 import piscina from "../../assets/images/spaces/piscina.jpg";
 import spa from "../../assets/images/spaces/spa.jpg";
 import futbol from "../../assets/images/spaces/futbol-sala.png";

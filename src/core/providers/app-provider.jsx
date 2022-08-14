@@ -7,16 +7,8 @@ export const AppProvider = ({ children }) => {
   const [isLoged, setIsLoged] = React.useState(haveUser);
   const [message, setMessage] = React.useState();
 
-  const changeMessage = (message) => {
-    setMessage(message);
-    const timer = setTimeout(() => setMessage(undefined), 2000);
-    return () => clearTimeout(timer);
-  };
-
   return (
-    <AppContext.Provider
-      value={{ isLoged, setIsLoged, message, setMessage: changeMessage }}
-    >
+    <AppContext.Provider value={{ isLoged, setIsLoged, message, setMessage }}>
       {children}
     </AppContext.Provider>
   );

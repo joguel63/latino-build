@@ -25,7 +25,7 @@ async function GET(url) {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        ...(!!token && { Authorization: token }),
+        ...(!!token && { Authorization: `Bearer ${token}` }),
         Accept: "*/*",
       },
     });
@@ -44,7 +44,7 @@ async function POST(url, body) {
       headers: {
         "Content-Type": "application/json",
         Accept: "*/*",
-        ...(!!token && { Authorization: token }),
+        ...(!!token && { Authorization: `Bearer ${token}` }),
       },
 
       body: JSON.stringify(body),
@@ -64,7 +64,7 @@ async function POSTFILE(url, body) {
       headers: {
         "Content-Type": "application/json",
         Accept: "*/*",
-        ...(!!token && { Authorization: token }),
+        ...(!!token && { Authorization: `Bearer ${token}` }),
       },
 
       body: JSON.stringify(body),
@@ -87,7 +87,7 @@ async function PUT(url, body) {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
-        ...(!!token && { Authorization: token }),
+        ...(!!token && { Authorization: `Bearer ${token}` }),
       },
       body: JSON.stringify(body),
     });
@@ -105,9 +105,11 @@ async function DELETE(url) {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",
-        ...(!!token && { Authorization: token }),
+        ...(!!token && { Authorization: `Bearer ${token}` }),
       },
     });
+    const res = await response;
+    console.log(res, "respuesta");
     const json = await response.json();
     if (response.status <= 299) return { data: json, error: null };
     return { data: null, error: json };

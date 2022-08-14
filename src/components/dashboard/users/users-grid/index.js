@@ -3,6 +3,7 @@ import { useUsersServices } from "core/hooks";
 import { Button, Table } from "react-bootstrap";
 import { GridRow } from "./grid-row";
 import { UserModal } from "./user-modal";
+import Spinner from "components/spinner";
 
 export const Users = () => {
   const [users, setUsers] = React.useState();
@@ -14,24 +15,23 @@ export const Users = () => {
     setUserSelected(undefined);
     setShow(false);
   };
-  const refreshUsers = () => getAllUsers(setUsers);
+  const refreshUsers = () => {
+    getAllUsers(setUsers);
+  };
 
   const handleUpdate = (user) => {
     setUserSelected(user);
     setShow(true);
   };
   const onDelete = (id) => {
-    userDelete(id);
-    refreshUsers();
+    userDelete(id, refreshUsers);
   };
-  //eslint-disable-next-line
   useEffect(() => {
     getAllUsers(setUsers);
+    //eslint-disable-next-line
   }, []);
 
-  console.log(users);
-
-  if (!users) return <></>;
+  if (!users) return <Spinner />;
   return (
     <div className="user-grid-container">
       <Button
@@ -41,7 +41,7 @@ export const Users = () => {
       >
         Nuevo Usuario
       </Button>
-      <Table striped bordered hover>
+      <Table striped bordered hover responsive>
         <thead>
           <tr>
             <th>Id</th>

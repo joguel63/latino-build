@@ -1,6 +1,7 @@
 @import "_variable.scss";
 
 .user-grid-container {
+  min-height: 70vh;
   padding: 40px 80px;
   display: flex;
   flex-direction: column;
@@ -15,4 +16,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+}
+
+@media  (max-width: 575px) {
+  .user-grid-container {
+    padding: 40px 8px;
+  }
 }

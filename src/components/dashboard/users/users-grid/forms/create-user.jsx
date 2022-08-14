@@ -2,9 +2,8 @@ import React from "react";
 import { Field } from "formik";
 import { roles } from "core/utils";
 export const CreateUser = (props) => {
-  const { values, errors, touched, handleChange, handleBlur, isEdit } = props;
+  const { values, errors, touched, handleChange, handleBlur } = props;
 
-  console.log(values);
   return (
     <>
       <div>
@@ -107,22 +106,6 @@ export const CreateUser = (props) => {
         />
         {errors.birthdate && touched.birthdate && errors.birthdate}
       </div>
-      {isEdit && (
-        <div>
-          <Field
-            type="password"
-            className="form-control"
-            placeholder="Contraseña"
-            autoComplete="password"
-            name="password"
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values.password}
-            required
-          />
-          {errors.password && touched.password && errors.password}
-        </div>
-      )}
       <div>
         <select
           type="select"

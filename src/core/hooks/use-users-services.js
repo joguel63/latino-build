@@ -1,3 +1,4 @@
+import { AppContext } from "core/contexts";
 import {
   createUser,
   deleteUser,
@@ -5,8 +6,11 @@ import {
   getUser,
   updateUser,
 } from "core/services";
+import { variants } from "core/utils";
+import { useContext } from "react";
 
 export const useUsersServices = () => {
+  const { setMessage } = useContext(AppContext);
   const getAllUsers = async (setUsers) => {
     getUsers().then((users) => setUsers(users));
   };
@@ -15,22 +19,48 @@ export const useUsersServices = () => {
     getUser(id).then((user) => console.log(user));
   };
 
-  const create = (body, onHide) => {
+  const errorMessage = () => {
+    setMessage({
+      message: "Ocurrio un error con su solicitud",
+      variant: variants.danger,
+    });
+  };
+  const successMessage = (message) => {
+    setMessage({
+      message: message,
+      variant: variants.success,
+    });
+  };
+  const create = (body, onHide, refresh) => {
     const request = {
       ...body,
       password: body.dni,
       email_verified_at: new Date(),
     };
 
-    createUser(request).then((response) => onHide());
+    createUser(request).then(({ data }) => {
+      if (data) successMessage("Usuario creado con exito");
+      else errorMessage();
+      refresh();
+      onHide();
+    });
   };
 
-  const update = (body, onHide) => {
-    updateUser(body).then((response) => onHide());
+  const update = (body, onHide, refresh) => {
+    updateUser(body).then(({ data }) => {
+      if (data) successMessage("Usuario actualizado con exito");
+      else errorMessage();
+      refresh();
+      onHide();
+    });
   };
 
-  const userDelete = (id) => {
-    deleteUser(id).then((response) => console.log(response));
+  const userDelete = (id, refresh) => {
+    deleteUser(id).then(({ error }) => {
+      if (!error) successMessage("Usuario eliminado con exito");
+      else errorMessage();
+      refresh();
+    });
   };
 
   return {
