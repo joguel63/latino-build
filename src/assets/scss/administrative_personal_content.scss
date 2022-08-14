@@ -1,0 +1,17 @@
+.section-personal {
+    margin-bottom: 50px;
+    .personal-content {
+        .col-12 {
+            border-top: 1px solid #dee2e6;
+            p {
+                color: #000;
+                font-weight: 600;
+            }
+        }
+        &.info {
+            .col-12 {
+                border-top: none;
+            }
+        }
+    }
+}
