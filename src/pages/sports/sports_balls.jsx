@@ -1,109 +1,73 @@
+import React from "react";
 import Breadcrumb from "components/breadcrumb";
 import PageLayout from "layouts/page_layout";
-import React from "react";
-import img from "../../assets/images/sports/balls.jpg";
+// import img from "../../assets/images/sports/balls.jpg";
+// import deportista from "../../assets/images/sports/bolas_criollas/image-sportman.jpg";
+import SportBallsContent from "components/page_content/sport_balls_content";
 
 export default function BallsSport() {
   return (
     <PageLayout>
-      <Breadcrumb title="Bolas criollas" />
-      <div className="content-body">
-        <div className="container">
-          <h1>Equipo Club Latino</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-            reprehenderit quos sapiente facere quod ipsa consectetur, magnam
-            temporibus natus repellat est fugit laudantium voluptatum. Non, rem
-            quia! Officiis, nisi optio.
-          </p>
-          <div className="row justify-content-center">
-            <div className="col-xl-12">
-              <img className="schoolImage" src={img} alt="beisbol" />
-            </div>
-            <div className="col-xl-12">
-              <p className="justify-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
-                eos nesciunt soluta quasi iste perspiciatis repellat quisquam
-                impedit sit non, quo atque aspernatur aliquid veritatis facilis
-                explicabo, ut accusamus ratione Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Hic cumque, sit quisquam velit
-                ipsum quas voluptatum reiciendis molestiae illum assumenda
-                pariatur aliquam temporibus iusto nesciunt laborum dignissimos
-                repellat. Fugit, consequatur.
-              </p>
-            </div>
-            <div className="col-xl-12">
-              <table className="schoolTable">
-                <thead>
-                  <tr>
-                    <th>Representante</th>
-                    <th>Correo</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Lorem Ipsun</td>
-                    <td>lorem@gmail.com</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="col-xl-6">
-              <table className="schoolTable">
-                <thead>
-                  <tr>
-                    <th>Liga</th>
-                    <th>Fecha</th>
-                    <th>Resultado</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Juego #1</td>
-                    <td>12/01/2022</td>
-                    <td>5/3</td>
-                  </tr>
-                  <tr>
-                    <td>Juego #2</td>
-                    <td>12/01/2022</td>
-                    <td>9/6</td>
-                  </tr>
-                  <tr>
-                    <td>Juego #3</td>
-                    <td>12/01/2022</td>
-                    <td>Por decidirse</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div className="col-xl-6">
-              <table className="schoolTable">
-                <thead>
-                  <tr>
-                    <th>Equipo 1</th>
-                    <th>Equipo 2</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Lorem</td>
-                    <td>Ipsun</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem2</td>
-                    <td>Ipsun2</td>
-                  </tr>
-                  <tr>
-                    <td>Lorem3</td>
-                    <td>Ipsun3</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Breadcrumb title="Bolas Criollas"/>
+      <SportBallsContent/>
     </PageLayout>
+    // <PageLayout>
+    //   <Breadcrumb title="Bolas criollas" />
+    //   <div className="content-body">
+    //     <div className="container-fluid sport-bg-image p-0" style={{backgroundImage: `URL(${img})`}}></div>
+        
+    //     <SportCoordinator />
+
+    //     <section className="section-coordinador my-5">
+    //       <div className="container">
+    //         <div className="row">
+    //           <div className="col-12 mb-3">
+    //             <h3>Representante:</h3>
+    //           </div>
+    //           <div className="col-12 col-md-6 text-center">
+    //             <img src={deportista} className="mb-4" alt="Fotografia Coordinador" />
+    //             <h3>Nombre Coordinador</h3>
+    //             <p>Coordinador</p>
+    //           </div>
+    //           <div className="col-12 offset-md-1 col-md-5 info-representante">
+    //             <h4 className="mb-4">Contacto:</h4>
+    //             <p><span>e-mail: </span>email@email.com</p>
+    //             <p><span>Practicas: </span>Lunes - Martes - Viernes (2pm - 5pm)</p>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </section>
+
+    //     <section className="section-team">
+    //       <div className="container">
+    //         <div className="row">
+    //           <div className="col-12 Equipo mb-3">
+    //             <h3>Nuestro Equipo:</h3>
+    //           </div>
+    //           <div className="col-12 col-sm-6 col-md-3 text-center">
+    //             <img src={deportista} className="mb-3" alt="" />
+    //             <h5>Nombre</h5>
+    //             <p>Posicion</p>
+    //           </div>
+    //           <div className="col-12 col-sm-6 col-md-3 text-center">
+    //             <img src={deportista} className="mb-3" alt="" />
+    //             <h5>Nombre</h5>
+    //             <p>Posicion</p>
+    //           </div>
+    //           <div className="col-12 col-sm-6 col-md-3 text-center">
+    //             <img src={deportista} className="mb-3" alt="" />
+    //             <h5>Nombre</h5>
+    //             <p>Posicion</p>
+    //           </div>
+    //           <div className="col-12 col-sm-6 col-md-3 text-center">
+    //             <img src={deportista} className="mb-3" alt="" />
+    //             <h5>Nombre</h5>
+    //             <p>Posicion</p>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </section>
+    //   </div>
+    // </PageLayout>
   );
 }
