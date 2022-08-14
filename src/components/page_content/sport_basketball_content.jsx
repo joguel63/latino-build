@@ -10,7 +10,7 @@ import img from "../../assets/images/sports/basquet.jpg";
 export default function SportBasketballContent() {
     return(
         <>
-        <div id="bolas-criollas">
+        <div id="Baloncesto">
             <div className="container-fluid sport-bg-image p-0" style={{backgroundImage: `URL(${img})`}}></div>
                 <DisiplineCoordinator name="nombre"/>
                 <section className="section-team">

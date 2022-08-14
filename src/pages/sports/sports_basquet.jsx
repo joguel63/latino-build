@@ -7,7 +7,7 @@ import img from "../../assets/images/sports/basquet.jpg";
 export default function BasquetSport() {
   return (
     <PageLayout>
-      <Breadcrumb title="Bolas Criollas"/>
+      <Breadcrumb title="Baloncesto"/>
       <SportBasketballContent/>
     </PageLayout>
   );
