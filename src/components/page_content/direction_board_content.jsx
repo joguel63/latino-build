@@ -7,61 +7,46 @@ export default function DirectionBoardContent() {
       <div className="container">
         <div className="row justify-content-between">
           <div className="col-xl-12 text-center">
-            <h3>Junta directiva del Centro Latino</h3>
-            <p className="justify-content">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Similique incidunt recusandae harum consequatur perspiciatis
-              repellendus maiores aliquam, atque dolorem fugit quis, possimus
-              magni sint rerum! Nobis laboriosam officia ea deleniti? Lorem
-              ipsum dolor sit amet, consectetur adipisicing elit. Similique
-              incidunt recusandae harum consequatur perspiciatis repellendus
-              maiores aliquam, atque dolorem fugit quis, possimus magni sint
-              rerum! Nobis laboriosam officia ea deleniti?
+            <h3 className="mt-4 mb-5">Junta directiva del Centro Latino</h3>
+            <p className="justify-content mb-5">
+              La dirección, representación y administración de la Asociación Civil Centro Latino estará a cargo de una Junta Directiva integrada por siete (7) miembros, así: un (1) Presidente, un (1) Vicepresidente, un (1) Director de Finanzas, un (1) Secretario, un (1) Director de Deportes y Recreación, un (1) Director de Cultura y Educación y un (1) Vocal, los cuales serán electos conforme a lo dispuesto en estos Estatutos y en el Reglamente de elecciones.
             </p>
-            <img className="" src={memberImg_01} alt="placeholder" />
-            <p></p>{/* como mierda pongo un espacio???*/}
-            <table className="table">
+            <img className="mb-5" src={memberImg_01} alt="placeholder" />
+            <p></p>{/* como mierda pongo un espacio??? -> class mt-4(margin-top) pa'*/}
+            <table className="table mt-4">
               <tbody>
                 <tr>
                   <td>
-                    <p>Lorem ipsun</p>
+                    <p>Sr. JOSE RAMIREZ</p>
                     <p>Presidente</p>
                   </td>
                   <td>
-                    <p>Lorem ipsun</p>
+                    <p>Ing. LICINIO RODRIGUEZ</p>
                     <p>VicePresidente</p>
                   </td>
                   <td>
-                    <p>Lorem ipsun</p>
+                    <p>Ing. ARLENYS VARELA</p>
                     <p>Secretario</p>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <p>Lorem ipsun</p>
-                    <p>Tesorero</p>
+                    <p>Lcdo. ADMER CHACÓN</p>
+                    <p>Director de Finanzas</p>
                   </td>
                   <td>
-                    <p>Lorem ipsun</p>
-                    <p>Vicetesorero</p>
+                    <p>Lcdo. HUGO HERNÁNDEZ</p>
+                    <p>Director de Deportes y Recreación</p>
                   </td>
                   <td>
-                    <p>Lorem ipsun</p>
-                    <p>Secretario</p>
+                    <p>Prof. CELSA OLEJUA</p>
+                    <p>Director de Cultura y Educación</p>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <p>Lorem ipsun</p>
-                    <p>ViceSecretario</p>
-                  </td>
-                  <td>
-                    <p>Lorem ipsun</p>
-                    <p>VicePresidente</p>
-                  </td>
-                  <td>
-                    <p>Lorem ipsun</p>
-                    <p>Secretario</p>
+                    <p>Sr. JOSE MOLINA</p>
+                    <p>Vocal</p>
                   </td>
                 </tr>
               </tbody>
