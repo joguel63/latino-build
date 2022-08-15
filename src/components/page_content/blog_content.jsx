@@ -28,10 +28,11 @@ export default function BlogContent() {
               key={index}
               title={item.new.title ?? ""}
               src={item?.pictures[0]?.url ?? newImg}
+              link={index}
+              content={item}
             />
           ))}
         </div>
-
         <NewsPageNavigation page="1" />
       </div>
     </div>

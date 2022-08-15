@@ -51,6 +51,7 @@ import BasquetSport from "pages/sports/sports_basquet";
 import { PrivateRoute } from "core/router/private-route";
 import { Dashboard } from "core/modules/dashboard";
 import { roles } from "core/utils";
+import NewsDetails from "pages/sports/news_detailed";
 // --openssl-legacy-provider
 function App() {
   return (
@@ -118,6 +119,7 @@ function App() {
             <Route path="/blog">
               <BlogPage />
             </Route>
+            <Route exact path="/news_detailed/:id" component={NewsDetails}  />
             <Route path="/contact">
               <Contact/>
             </Route>
