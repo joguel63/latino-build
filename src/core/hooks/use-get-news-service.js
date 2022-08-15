@@ -1,4 +1,4 @@
-import { getNews } from "core/services";
+import { getNews, getFullNew } from "core/services";
 
 export const useGetNewsService = () =>{
 
@@ -12,5 +12,16 @@ export const useGetNewsService = () =>{
             console.log(error);
         }
     }
-    return {getNewsPage}
+
+    const getFullNewPage = (id,setContent) =>{
+        try {
+            getFullNew(id).then(({data}) => {
+                if(!data) return;
+                setContent(data);                
+            });            
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    return {getNewsPage, getFullNewPage}
 }

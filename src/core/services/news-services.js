@@ -29,3 +29,9 @@ export const deleteNew = async (id) => {
   const response = await DELETE(`/news/${id}`);
   return response;
 };
+
+
+export const getFullNew = async (id) =>{
+    const response = await GET(`/full-news/${id}`);
+    return response;
+}

@@ -3,6 +3,9 @@
     .personal-content {
         .col-12 {
             border-top: 1px solid #dee2e6;
+            h5 {
+                text-transform: capitalize;
+            }
             p {
                 color: #000;
                 font-weight: 600;
