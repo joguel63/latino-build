@@ -12,14 +12,12 @@ export default function NewDetailedContent({ id }) {
 
   if (Object.keys(content).length === 0) return <Spinner />;
 
-   console.log(content.new);
-
   return (
     <div className="content-body">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
-            <h2>{content.new.title}</h2>
+            <h1>{content.new.title}</h1>
           </div>
           <div className="col-xl 3">
             <h4>{content.new.created_at}</h4>
@@ -27,6 +25,19 @@ export default function NewDetailedContent({ id }) {
           <div className="col-xl-12">
             <p>{content.new.description}</p>
           </div>
+          {content.new.body.map((paragraph, index) => {
+            return (
+              <div id={index} className="col-xl-12">
+                <h3>{paragraph.title}</h3>
+                <p>{paragraph.paragraph}</p>
+              </div>
+            );
+          })}
+          {content.pictures.map((picture,index)=>{
+            return(
+              <img src={picture.url} lang={picture.name}></img>
+            )
+          })}
         </div>
       </div>
     </div>
