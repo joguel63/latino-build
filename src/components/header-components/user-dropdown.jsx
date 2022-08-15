@@ -9,11 +9,10 @@ import { roles } from "core/utils";
 
 export const UserDropdown = () => {
   const { logoutUser } = useLoginService();
-  const { user, checkRole } = useUser();
+  const { checkRole } = useUser();
   const history = useHistory();
   const navigateTo = (path) => history.push(path);
 
-  console.log(user);
   return (
     <Dropdown className="custom-dropdown">
       <Dropdown.Toggle variant="success" as="div" className="d-inline-block">

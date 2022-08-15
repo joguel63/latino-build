@@ -1,4 +1,2 @@
-import React from "react";
-export const News = () => {
-  return <>Noticias</>;
-};
+export * from "./news-grid";
+export * from "./news-form";

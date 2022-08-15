@@ -59,23 +59,18 @@ async function POST(url, body) {
 
 async function POSTFILE(url, body) {
   try {
-    fetch(baseUrl + url, {
+    const response = fetch(baseUrl + url, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        Accept: "*/*",
         ...(!!token && { Authorization: `Bearer ${token}` }),
       },
 
-      body: JSON.stringify(body),
-    })
-      .then((response) => response.blob())
-      .then((blob) => {
-        var file = new Blob([blob], { type: "application/pdf" });
-        var fileURL = URL.createObjectURL(file);
-        window.open(fileURL, "_blank");
-      });
-    return { data: null, error: "" };
+      body: body,
+    });
+
+    const json = (await response).json();
+    if (response.status <= 299) return { data: json, error: null };
+    return { data: null, error: json };
   } catch (error) {
     return { data: null, error: error };
   }
@@ -84,7 +79,7 @@ async function POSTFILE(url, body) {
 async function PUT(url, body) {
   try {
     const response = await fetch(baseUrl + url, {
-      method: "PUT",
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
         ...(!!token && { Authorization: `Bearer ${token}` }),
@@ -108,8 +103,6 @@ async function DELETE(url) {
         ...(!!token && { Authorization: `Bearer ${token}` }),
       },
     });
-    const res = await response;
-    console.log(res, "respuesta");
     const json = await response.json();
     if (response.status <= 299) return { data: json, error: null };
     return { data: null, error: json };

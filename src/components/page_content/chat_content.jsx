@@ -57,7 +57,6 @@ export default function ChatContent() {
            initialValues={{ message_text: '' }}
             onSubmit={(values, actions) => {
               setTimeout(() => {
-                console.log(JSON.stringify(values, null, 2));
                 actions.setSubmitting(false);
               }, 1000);
             }}
