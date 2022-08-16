@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom'
 import { Card } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
-export default function SpaceImg({ src, title, description }) {
+export default function SpaceImg({ src, title, description, link }) {
   const [show, setShow] = useState(false);
   const handleShow = (val) => setShow(val);
 
@@ -35,9 +36,11 @@ export default function SpaceImg({ src, title, description }) {
             <Button variant="secondary" onClick={() => handleShow(false)}>
               Cerrar
             </Button>
-            <Button variant="primary" onClick={() => handleShow(false)}>
+            <Link to={`/scheduleSpace/${title}`}>
+              <Button variant="primary" onClick={() => handleShow(false)}>
               Ver horarios
-            </Button>
+              </Button>
+            </Link>
           </Modal.Footer>
         </Modal>
         <h4>{title ?? ""}</h4>

@@ -6,12 +6,13 @@ import MyEvents from "./pages/my_events";
 import Members from "./pages/spaces";
 import Message from "./pages/message";
 import ChatPage from "./pages/chat";
+import SpaceSchedulePage from "./pages/spaces_schedule";
 import CalendarPage from "./pages/calendar";
 import Profile from "./pages/profile";
 import PaymentPage from "./pages/payment";
 import Notification from "./pages/notification";
 import Personal from "./pages/personal";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/scss/style.scss";
 import "./assets/css/shortcode.css";
@@ -24,8 +25,9 @@ import Statutes from "pages/statutes";
 import Spaces from "./pages/spaces";
 import Contact from "./pages/contact";
 import PresidentsPage from "pages/presidents";
-import { HiddenAlert } from "components/alert";
+
 import BlogPage from "pages/news";
+//club services
 import ServiceGym from "pages/club_services/service_gym";
 import ServiceParty from "pages/club_services/service_party";
 import ServicePresentations from "pages/club_services/service_presentations";
@@ -33,21 +35,28 @@ import ServiceRestaurant from "pages/club_services/service_restaurant";
 import ServiceSauna from "pages/club_services/service_sauna";
 import ServiceBar from "pages/club_services/bar_teather";
 import ServiceSpa from "pages/club_services/service_spa";
+//club schools
 import BaseballSchool from "pages/sport_schools/schools_baseball";
 import KarateSchool from "pages/sport_schools/schools_karate";
 import SoccerSchool from "pages/sport_schools/schools_soccer";
 import SwimmingSchool from "pages/sport_schools/schools_swimming";
 import VolleySchool from "pages/sport_schools/schools_volley";
+//club sports
 import BallsSport from "pages/sports/sports_balls";
-import DanceCulture from "pages/culture/culture_dance";
-import CoralCulture from "pages/culture/culture_coral";
-import TeatherCulture from "pages/culture/culture_teather";
 import BaseballSport from "pages/sports/sports_baseball";
 import SoccerSport from "pages/sports/sports_soccer";
 import SwimmingSport from "pages/sports/sports_swimming";
 import TenisSport from "pages/sports/sports_tenis";
 import VolleySport from "pages/sports/sports_volleyball";
 import BasquetSport from "pages/sports/sports_basquet";
+//club culture
+import DanceCulture from "pages/culture/culture_dance";
+import CoralCulture from "pages/culture/culture_coral";
+import TeatherCulture from "pages/culture/culture_teather";
+//components
+import { HiddenAlert } from "components/alert";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { PrivateRoute } from "core/router/private-route";
 import { Dashboard } from "core/modules/dashboard";
 import { roles } from "core/utils";
@@ -83,6 +92,7 @@ function App() {
             <Route path="/calendar">
               <CalendarPage />
             </Route>
+            <Route exact path="/scheduleSpace/:id" component={SpaceSchedulePage}/>
             <Route path="/profile">
               <Profile />
             </Route>
