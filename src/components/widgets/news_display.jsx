@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 export default function NewsDisplay({ title, src, link, content}) {
   return (
     <Card>
-      <Card.Img className="newsImg" variant="top" src={src} alt={title}></Card.Img>
+      <Link to={`/news_detailed/${link}`} >
+      <Card.Img className="newsImg" variant="top" src={src} ></Card.Img>
+      </Link>
       <Card.Body>
         <Card.Title className="titleLink">
           <Link className="titleLink" to={`/news_detailed/${link}`}>{title}</Link>

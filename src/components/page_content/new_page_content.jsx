@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useGetNewsService } from "core/hooks/use-get-news-service";
 import { useEffect } from "react";
 import Spinner from "components/spinner";
+import CommentDisplay from "components/widgets/comment_display";
 
 export default function NewDetailedContent({ id }) {
   const [content, setContent] = useState({});
@@ -35,8 +36,11 @@ export default function NewDetailedContent({ id }) {
           })}
           {content.pictures.map((picture,index)=>{
             return(
-              <img src={picture.url} lang={picture.name}></img>
+              <img id={index} src={picture.url} lang={picture.name}></img>
             )
+          })}
+          {content.comments.map((comment,index)=>{
+            return <CommentDisplay id={index} user={""} comment={comment.comment_text} date={new Date()}/>
           })}
         </div>
       </div>
