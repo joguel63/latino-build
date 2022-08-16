@@ -8,8 +8,8 @@ import Message from "./pages/message";
 import ChatPage from "./pages/chat";
 import SpaceSchedulePage from "./pages/spaces_schedule";
 import CalendarPage from "./pages/calendar";
-import Profile from "./pages/profile";
-import PaymentPage from "./pages/payment";
+/* import Profile from "./pages/profile";
+import PaymentPage from "./pages/payment"; */
 import Notification from "./pages/notification";
 import Personal from "./pages/personal";
 

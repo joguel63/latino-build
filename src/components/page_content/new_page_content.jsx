@@ -10,6 +10,7 @@ export default function NewDetailedContent({ id }) {
   const [content, setContent] = useState({});
   const { getFullNewPage } = useGetNewsService();
 
+  //eslint-disable-next-line
   useEffect(() => getFullNewPage(id, setContent), []);
 
   if (Object.keys(content).length === 0) return <Spinner />;
@@ -30,6 +31,7 @@ export default function NewDetailedContent({ id }) {
                 id={index}
                 key={index}
                 src={picture.url}
+                alt={picture.url}
                 onError={(e) => {
                   e.target.src = Image;
                 }}
