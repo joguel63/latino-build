@@ -92,13 +92,17 @@ function App() {
             <Route path="/calendar">
               <CalendarPage />
             </Route>
-            <Route exact path="/scheduleSpace/:id" component={SpaceSchedulePage}/>
-            <Route path="/profile">
+            <Route
+              exact
+              path="/scheduleSpace/:id"
+              component={SpaceSchedulePage}
+            />
+            {/* <Route path="/profile">
               <Profile />
-            </Route>
-            <Route path="/payment">
+            </Route> */}
+            {/*    <Route path="/payment">
               <PaymentPage />
-            </Route>
+            </Route> */}
             <Route path="/notification">
               <Notification />
             </Route>
@@ -129,75 +133,75 @@ function App() {
             <Route path="/blog">
               <BlogPage />
             </Route>
-            <Route exact path="/news_detailed/:id" component={NewsDetails}  />
+            <Route exact path="/news_detailed/:id" component={NewsDetails} />
             <Route path="/contact">
-              <Contact/>
+              <Contact />
             </Route>
             <Route path="/service_gym">
-              <ServiceGym/>
+              <ServiceGym />
             </Route>
             <Route path="/service_party">
-              <ServiceParty/>
+              <ServiceParty />
             </Route>
             <Route path="/service_presentations">
-              <ServicePresentations/>
+              <ServicePresentations />
             </Route>
             <Route path="/service_restaurant">
-              <ServiceRestaurant/>
+              <ServiceRestaurant />
             </Route>
             <Route path="/service_spa">
-              <ServiceSpa/>
+              <ServiceSpa />
             </Route>
             <Route path="/service_sauna">
-              <ServiceSauna/>
+              <ServiceSauna />
             </Route>
             <Route path="/service_bar_teather">
-              <ServiceBar/>
+              <ServiceBar />
             </Route>
             <Route path="/school_baseball">
-              <BaseballSchool/>
+              <BaseballSchool />
             </Route>
             <Route path="/school_karate">
-              <KarateSchool/>
+              <KarateSchool />
             </Route>
             <Route path="/school_soccer">
-              <SoccerSchool/>
+              <SoccerSchool />
             </Route>
             <Route path="/school_swimming">
-              <SwimmingSchool/>
+              <SwimmingSchool />
             </Route>
             <Route path="/school_volley">
-              <VolleySchool/>
+              <VolleySchool />
             </Route>
             <Route path="/sports_balls">
-              <BallsSport/>
+              <BallsSport />
             </Route>
             <Route path="/sports_baseball">
-              <BaseballSport/>
+              <BaseballSport />
             </Route>
             <Route path="/sports_basquet">
-              <BasquetSport/>
+              <BasquetSport />
             </Route>
             <Route path="/sports_soccer">
-              <SoccerSport/>
+              <SoccerSport />
             </Route>
             <Route path="/sports_swimming">
-              <SwimmingSport/>
+              <SwimmingSport />
             </Route>
             <Route path="/sports_tenis">
-              <TenisSport/>
+              <TenisSport />
             </Route>
             <Route path="/sports_volleyball">
-              <VolleySport/>
+              <VolleySport />
             </Route>
             <Route path="/culture_dance">
-              <DanceCulture/>
+              <DanceCulture />
             </Route>
             <Route path="/culture_coral">
-              <CoralCulture/>
+              <CoralCulture />
             </Route>
             <Route path="/culture_teather">
-              <TeatherCulture/>
+              <TeatherCulture />
             </Route>
             <PrivateRoute
               component={Dashboard}

@@ -24,6 +24,7 @@ export const Reservations = () => {
   if (!reservations.length) return <Spinner />;
   return (
     <div className="user-grid-container">
+      <h1>Listado de Reservaciones</h1>
       <Table striped bordered hover responsive>
         <thead>
           <tr>

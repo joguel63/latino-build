@@ -34,6 +34,7 @@ export const Users = () => {
   if (!users) return <Spinner />;
   return (
     <div className="user-grid-container">
+      <h1>Listado de Usuarios</h1>
       <Button
         variant="primary"
         className="create-user-button"

@@ -23,12 +23,12 @@ export const UserDropdown = () => {
         />
       </Dropdown.Toggle>
       <Dropdown.Menu className="dropdown-menu-right">
-        <Dropdown.Item onClick={() => navigateTo("/profile")}>
+        {/*    <Dropdown.Item onClick={() => navigateTo("/profile")}>
           Perfil
         </Dropdown.Item>
         <Dropdown.Item onClick={() => navigateTo("/payment")}>
           Deuda
-        </Dropdown.Item>
+        </Dropdown.Item> */}
         {checkRole(roles.admin) && (
           <Dropdown.Item onClick={() => navigateTo("/dashboard")}>
             Administracion

@@ -25,6 +25,7 @@ export const NewsGrid = () => {
   if (!news) return <Spinner />;
   return (
     <div className="user-grid-container">
+      <h1>Listado de Noticias</h1>
       <Button
         variant="primary"
         className="create-user-button"
