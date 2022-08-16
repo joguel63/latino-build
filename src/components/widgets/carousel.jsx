@@ -11,7 +11,7 @@ const images = [
   { src: carousel2,alt: "", label:"Beisbol" },
   { src: carousel3,alt: "", label:"Fiesta" },
   { src: carousel4,alt: "", label:"Teatro" },
-  { src: carousel5,alt: "", label:"Necesito mejores fotos" },
+  { src: carousel5,alt: "", label:"Partido de beisbol" },
 ];
 
 export default function NewsCarousel({news}) {
