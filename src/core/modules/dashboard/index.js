@@ -7,6 +7,7 @@ export const Dashboard = () => {
   return (
     <PageLayout dashBoard>
       <Switch>
+      <Route exact path="/dashboard" component={Users} />
         <Route exact path="/dashboard/users" component={Users} />
 
         <Route exact path="/dashboard/news" component={NewsGrid} />

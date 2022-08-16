@@ -34,7 +34,9 @@ export const UserModal = (props) => {
       >
         {({ handleSubmit, isSubmitting, ...rest }) => (
           <Form onSubmit={handleSubmit}>
-            <Modal.Header closeButton>Crear Usuario</Modal.Header>
+            <Modal.Header closeButton>
+              {!!user ? "Editar" : "Crear"} Usuario
+            </Modal.Header>
             <Modal.Body className="user-form-container">
               <CreateUser {...rest} isEdit={!!user} />
             </Modal.Body>

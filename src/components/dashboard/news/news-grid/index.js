@@ -47,9 +47,6 @@ export const NewsGrid = () => {
             <GridRow
               item={item}
               key={item.id}
-              handleUpdate={() => {
-                return "";
-              }}
               onDelete={onDelete}
             />
           ))}
