@@ -14,19 +14,45 @@ export default function Header(props) {
     <div className="header py-4">
       <div className="container">
         <div className="row align-items-center header-container">
-          <div>
-            <div className="logo">
-              <Link to="/">
-                <img className="logo" src={logoImg} alt="logo" />
-              </Link>
-            </div>
-            <button className="nav-control" onClick={props.controlMenu}>
+          <div className="d-flex align-items-center justify-content-start">
+            <button
+              className="nav-control mr-1"
+              style={{ flex: 1 }}
+              onClick={props.controlMenu}
+            >
               {props.showMenu ? (
                 <i className="fa fa-times"></i>
               ) : (
                 <i className="fa fa-bars"></i>
               )}
             </button>
+            <div className="logo">
+              <Link
+                to="/"
+                className="d-flex align-items-center"
+                style={{ gap: "16px" }}
+              >
+                <img className="logo" src={logoImg} alt="logo" />
+                <div className="row">
+                  <div className="col-md-12">
+                    <h2
+                      className="text-black-50"
+                      style={{ fontFamily: "cambria", margin: 0 }}
+                    >
+                      <strong>Centro Latino</strong>
+                    </h2>
+                  </div>
+                  <div className="col-md-12">
+                    <h4
+                      className="text-black-50"
+                      style={{ fontFamily: "cambria" }}
+                    >
+                      San Cristóbal
+                    </h4>
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
 
           <div>

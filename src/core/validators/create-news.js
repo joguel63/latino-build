@@ -2,8 +2,7 @@ export const ValidateCreateNews = (newsForm, isEdit) => {
   const validations = [
     !!newsForm.title,
     !!newsForm.description,
-    !!newsForm.body?.length,
-    newsForm.body?.every((section) => !!section.paragraph),
+    !!newsForm.body,
   ];
   if (!isEdit) validations.push(!!newsForm.picture);
   if (!validations.every((valid) => valid))

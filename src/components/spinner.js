@@ -1,11 +1,11 @@
 import React from "react";
 import { Spinner as ReactSpinner } from "react-bootstrap";
 
-const Spinner = () => {
+const Spinner = ({ height = 70 }) => {
   return (
     <div
       style={{
-        minHeight: "70vh",
+        minHeight: `${height}vh`,
         position: "relative",
       }}
     >

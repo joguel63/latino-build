@@ -3,9 +3,9 @@ import { useState } from "react";
 import { useGetNewsService } from "core/hooks/use-get-news-service";
 import { useEffect } from "react";
 import Spinner from "components/spinner";
-import CommentDisplay from "components/widgets/comment_display";
 import moment from "moment";
 import Image from "assets/images/news/9.jpg";
+import { CommentSection } from "./comment-section";
 export default function NewDetailedContent({ id }) {
   const [content, setContent] = useState({});
   const { getFullNewPage } = useGetNewsService();
@@ -14,7 +14,29 @@ export default function NewDetailedContent({ id }) {
   useEffect(() => getFullNewPage(id, setContent), []);
 
   if (Object.keys(content).length === 0) return <Spinner />;
+  /*  content.comments = [
+    {
+      user: "Juan",
+      comment:
+        "Hola esto es un comentario de prueba para ver si funciona el componente de comentarios de la pagina de noticias detallada de la pagina de noticias detallada",
+      date: moment(new Date()).format("DD/MM/YYYY"),
+    },
+    {
+      user: "Juan",
+      comment:
+        "Hola esto es un comentario de prueba para ver si funciona el componente de comentarios de la pagina de noticias detallada de la pagina de noticias detallada",
+      date: moment(new Date()).format("DD/MM/YYYY"),
+    },
+    {
+      user: "Juan",
+      comment:
+        "Hola esto es un comentario de prueba para ver si funciona el componente de comentarios de la pagina de noticias detallada de la pagina de noticias detallada",
+      date: moment(new Date()).format("DD/MM/YYYY"),
+    },
+  ]; */
 
+  console.log(content);
+  console.log(content.new);
   return (
     <div className="content-body">
       <div className="container">
@@ -44,25 +66,14 @@ export default function NewDetailedContent({ id }) {
           <div className="col-xl-12">
             <p>{content.new.description}</p>
           </div>
-          {content.new.body.map((paragraph, index) => {
-            return (
-              <div key={index} className="col-xl-12 section-container">
-                <h3 className="new-subtitle">{paragraph.title}</h3>
-                <p className="new-content">{paragraph.paragraph}</p>
-              </div>
-            );
-          })}
 
-          {content.comments.map((comment, index) => {
-            return (
-              <CommentDisplay
-                key={index}
-                user={""}
-                comment={comment.comment_text}
-                date={new Date()}
-              />
-            );
-          })}
+          <div
+            className="col-xl-12 section-container"
+            dangerouslySetInnerHTML={{ __html: content.new.body }}
+          />
+           <div className="col-xl-12">
+            <CommentSection comments={content.comments} />
+          </div>
         </div>
       </div>
     </div>

@@ -4,9 +4,10 @@ import { Button } from "react-bootstrap";
 import { AppContext } from "core/contexts";
 import { variants } from "core/utils";
 import { ValidateCreateNews } from "core/validators";
-import { NewsSection } from "./news-section";
 import { useNewsServices } from "core/hooks";
 import Spinner from "components/spinner";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 
 export const NewsForm = () => {
   const { setMessage } = useContext(AppContext);
@@ -24,16 +25,13 @@ export const NewsForm = () => {
     if (!error) !!params.id ? update(newsForm) : create(newsForm);
     else setMessage({ message: error, variant: variants.danger });
   };
-  const addSection = () => {
-    const id = new Date().getTime();
-    setNewsForm({ ...newsForm, body: [...(newsForm.body ?? []), { id: id }] });
-  };
 
   useEffect(() => {
     if (params.id) getNewById(params.id, setNewsForm);
     //eslint-disable-next-line
   }, []);
 
+  console.log(newsForm);
   if (params.id && !Object.keys(newsForm).length) return <Spinner />;
   return (
     <div className="news-form-container">
@@ -73,18 +71,12 @@ export const NewsForm = () => {
               placeholder="Imagen"
             />
           )}
-          <div className="news-form-section-header-button">
-            <Button onClick={addSection}>Agregar seccion</Button>
-          </div>
         </div>
-        {newsForm.body?.map(({ id }) => (
-          <NewsSection
-            key={id}
-            id={id}
-            newsForm={newsForm}
-            setNewsForm={setNewsForm}
-          />
-        ))}
+        <ReactQuill
+          theme="snow"
+          value={newsForm.body ?? ""}
+          onChange={(e) => handleChange({ target: { name: "body", value: e } })}
+        />
       </div>
       <div className="news-form-actions">
         <Button onClick={handleSubmit}>

@@ -17,7 +17,7 @@ export const createNew = async (news) => {
 
 export const updateNew = async (news) => {
   const request = {
-    body: JSON.stringify(news.body),
+    body: news.body,
     description: news.description,
     title: news.title,
   };
@@ -30,8 +30,7 @@ export const deleteNew = async (id) => {
   return response;
 };
 
-
-export const getFullNew = async (id) =>{
-    const response = await GET(`/full-news/${id}`);
-    return response;
-}
+export const getFullNew = async (id) => {
+  const response = await GET(`/full-news/${id}`);
+  return response;
+};
