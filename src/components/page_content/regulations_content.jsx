@@ -6,7 +6,7 @@ export default function RegulationsContent() {
       <div className="container">
         <div className="row justify-content-between">
           <div className="col-xl-12 text-center">
-            <h2>Refulaciones</h2>
+            <h2>Regulaciones</h2>
             <p className="text-justify">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Voluptatibus iure iste animi minima ipsam magnam modi aut numquam.
