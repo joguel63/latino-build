@@ -46,8 +46,29 @@ button {
   }
 
   &:focus {
-    background-color:  $primary;
+    background-color: $primary;
     border-color: $primary;
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  border-color: $secondary;
+  color: $white;
+
+  &:hover {
+    background-color: darken($color: $secondary, $amount: 10%);
+    border-color: $secondary;
+  }
+
+  &:active {
+    background-color: darken($color: $secondary, $amount: 10%);
+    border-color: $secondary;
+  }
+
+  &:focus {
+    background-color: $secondary;
+    border-color: $secondary;
   }
 }
 

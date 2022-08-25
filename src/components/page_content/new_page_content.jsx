@@ -14,29 +14,7 @@ export default function NewDetailedContent({ id }) {
   useEffect(() => getFullNewPage(id, setContent), []);
 
   if (Object.keys(content).length === 0) return <Spinner />;
-  /*  content.comments = [
-    {
-      user: "Juan",
-      comment:
-        "Hola esto es un comentario de prueba para ver si funciona el componente de comentarios de la pagina de noticias detallada de la pagina de noticias detallada",
-      date: moment(new Date()).format("DD/MM/YYYY"),
-    },
-    {
-      user: "Juan",
-      comment:
-        "Hola esto es un comentario de prueba para ver si funciona el componente de comentarios de la pagina de noticias detallada de la pagina de noticias detallada",
-      date: moment(new Date()).format("DD/MM/YYYY"),
-    },
-    {
-      user: "Juan",
-      comment:
-        "Hola esto es un comentario de prueba para ver si funciona el componente de comentarios de la pagina de noticias detallada de la pagina de noticias detallada",
-      date: moment(new Date()).format("DD/MM/YYYY"),
-    },
-  ]; */
 
-  console.log(content);
-  console.log(content.new);
   return (
     <div className="content-body">
       <div className="container">
@@ -71,7 +49,7 @@ export default function NewDetailedContent({ id }) {
             className="col-xl-12 section-container"
             dangerouslySetInnerHTML={{ __html: content.new.body }}
           />
-           <div className="col-xl-12">
+          <div className="col-xl-12">
             <CommentSection comments={content.comments} />
           </div>
         </div>

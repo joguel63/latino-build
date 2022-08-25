@@ -26,8 +26,8 @@ export const HiddenAlert = () => {
       style={{
         zIndex: 2000,
         color: "white",
-        position: "absolute",
-        top: "90vh",
+        position: "fixed",
+        bottom: "3%",
         left: "3%",
       }}
     >

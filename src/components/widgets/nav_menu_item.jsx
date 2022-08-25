@@ -7,7 +7,6 @@ export default function NavMenuItem({ route, icon, title, subitems }) {
 
   const isActive = (route) => route === location.pathname;
 
-  console.log(location.pathname, route, subitems);
 
   if (!!subitems)
     return (

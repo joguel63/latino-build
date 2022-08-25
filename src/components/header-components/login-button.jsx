@@ -8,7 +8,7 @@ export const LoginButton = () => {
   const handleClose = () => setShow(false);
   return (
     <>
-      <Button variant="outline-secondary" onClick={handleShow}>
+      <Button variant="secondary" onClick={handleShow}>
         Iniciar Sesion
       </Button>
       <LoginModal show={show} onHide={handleClose} />

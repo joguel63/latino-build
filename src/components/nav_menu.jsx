@@ -15,11 +15,10 @@ export default function NavMenu(props) {
   };
   useEffect(() => {
     controlMenu();
-  }, [tabletView]);
+  }, [tabletView]); //eslint-disable-line
 
   const showMenu = props.showMenu;
   const navClass = showMenu ? "tablet-menu show" : "tablet-menu";
-  console.log(navClass, showMenu);
   return (
     <div className={tabletView ? `${navClass}` : "menu"}>
       <div className="container">
@@ -27,7 +26,6 @@ export default function NavMenu(props) {
           <div className="col-xl-12">
             <nav className="topbar-nav">
               <MetisMenu className="metismenu" id="metismenu" toggle={true}>
-                <NavMenuItem title="Inicio" route="/" />
                 <NavMenuItem title="Blog" route="/blog" />
                 <NavMenuItem
                   title="Nosotros"

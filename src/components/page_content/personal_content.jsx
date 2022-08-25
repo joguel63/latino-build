@@ -153,7 +153,6 @@ export default function PersonalContent() {
                   }}
                   onSubmit={async values => {
                     await new Promise(resolve => setTimeout(resolve, 500));
-                    console.log(JSON.stringify(values, null, 2));
                   }}
                 >
                 <Form>

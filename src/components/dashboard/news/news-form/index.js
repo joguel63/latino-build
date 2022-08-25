@@ -31,7 +31,6 @@ export const NewsForm = () => {
     //eslint-disable-next-line
   }, []);
 
-  console.log(newsForm);
   if (params.id && !Object.keys(newsForm).length) return <Spinner />;
   return (
     <div className="news-form-container">
