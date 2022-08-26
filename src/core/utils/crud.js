@@ -1,4 +1,4 @@
-const baseUrl = "http://latino-api.herokuapp.com/api";
+const baseUrl = process.env.REACT_APP_BASE_URL;
 const token = JSON.parse(localStorage.getItem("user"))?.token;
 
 async function GETLogin(url) {
