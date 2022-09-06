@@ -69,7 +69,7 @@ function App() {
         <AppProvider>
           <Switch>
             <Route path="/" exact>
-              <HomeOne />
+              <BlogPage />
             </Route>
             <Route path="/active_events">
               <ActiveEvents />

@@ -6,7 +6,7 @@ import PageLayout from "layouts/page_layout";
 export default function BlogPage() {
   return (
     <PageLayout>
-      <Breadcrumb title="Noticias" />
+      {/*  <Breadcrumb title="Noticias" /> */}
       <BlogContent />
     </PageLayout>
   );

@@ -55,7 +55,7 @@ export default function BlogContent() {
               disabled={page - 1 < 0}
               onClick={() => setPage(page - 1)}
             />
-            <Pagination.Item active >
+            <Pagination.Item active className="active-pagination">
               {page + 1}
             </Pagination.Item>
             <Pagination.Next

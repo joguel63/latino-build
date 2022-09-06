@@ -22,22 +22,26 @@ export default function NewDetailedContent({ id }) {
           <div className="col-xl-12">
             <h1>{content.new.title}</h1>
           </div>
-          <div className="col-xl 1">
+          <div className="col-xl 12 d-flex justify-content-end text-black-50 mt-2">
             <h4>{moment(content.new.created_at).format("DD/MM/YYYY")}</h4>
           </div>
           <div className="col-xl-12 mt-1 mb-4">
             {content.pictures.map((picture, index) => (
-              <img
-                id={index}
+              <picture
                 key={index}
-                src={picture.url}
-                alt={picture.url}
-                onError={(e) => {
-                  e.target.src = Image;
-                }}
-                lang={picture.name}
-                width="100%"
-              ></img>
+                style={{ display: "block", position: "relative", paddingTop: "56.25%" }}
+              >
+                <img
+                  id={index}
+                  src={picture.url}
+                  alt={picture.url}
+                  onError={(e) => {
+                    e.target.src = Image;
+                  }}
+                  lang={picture.name}
+                  style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                ></img>
+              </picture>
             ))}
           </div>
 
